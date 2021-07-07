@@ -2,8 +2,12 @@
 
 Esse projeto é o MVP do site do museu ele foi desenvolvido com [jekyll](https://jekyllrb.com/) e tem a intenção de ser nosso primeiro contado com a comunidade. Adicionando assim blog posts e pequenas exposições virtuais. 
 
+Nós usamos
 
-Tabela de Conteudo
++ Ruby 2.7.0
++ Jekyll 4.2.0
+
+## Tabela de Conteúdo
 =================
 
   * [Install](#install)
