@@ -1,0 +1,301 @@
+
+<head>
+  <link rel="stylesheet" type="text/css" href="/assets/css/main.css">  
+  <link rel="manifest" href="/manifest.json">
+  <link rel="shortcut icon" type="image/png" href="/assets/images/pwa.png"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/5d13920381.js" crossorigin="anonymous"></script>
+  <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Museu da Computação | Museu da Computação da UFRJ</title>
+<meta name="generator" content="Jekyll v3.9.0" />
+<meta property="og:title" content="Museu da Computação" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Museu da Computação da UFRJ" />
+<meta property="og:description" content="Museu da Computação da UFRJ" />
+<link rel="canonical" href="http://localhost:3000/about/" />
+<meta property="og:url" content="http://localhost:3000/about/" />
+<meta property="og:site_name" content="Museu da Computação" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Museu da Computação" />
+<script type="application/ld+json">
+{"@type":"WebSite","name":"Museu da Computação","description":"Museu da Computação da UFRJ","headline":"Museu da Computação","url":"http://localhost:3000/about/","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  <link type="application/atom+xml" rel="alternate" href="http://localhost:3000/feed.xml" title="Museu da Computação" />
+</head>  
+
+<script>
+  if ("serviceWorker" in navigator) {
+  if (navigator.serviceWorker.controller) {
+    console.log("An active service worker found, no need to register");
+  } else {
+    // Register the service worker
+    navigator.serviceWorker
+      .register("/service-worker.js", {
+        scope: "./"
+      })
+      .then(function (reg) {
+        console.log("Service worker has been registered for scope: " + reg.scope);
+      });
+  }
+}
+</script>
+
+
+<header>
+  <nav class="menu">
+    <a class="menu__logo" href="/">
+      Museu da Computação
+    </a>
+    <ul>
+      <li class="menu__item"><a href="/">Início</a></li>
+      <li class="menu__item"><a href="/about/#aboutUs">Sobre </a></li>
+      <li class="menu__item"><a href="/posts/">Blog</a></li>
+      <li class="menu__item"><a href="/contact/" >Contato</a>
+      </li>
+    </ul>
+  </nav>
+
+<div class="menu-mobile__icon">
+  <a class="menu__logo" href="/">
+    Museu da Computação
+  </a>
+  <a href="#" onclick="toggle();">
+    <i class="fas fa-bars"></i>
+  </a>
+</div>
+ 
+<nav class="menu-mobile">
+  <ul>
+    <li><a href="/">Início</a></li>
+    <li><a href="/about/#aboutUs">Sobre </a></li>
+    <li><a href="/posts/">Blog</a></li>
+    <li><a href="/contact/">Contato</a>
+    </li>
+  </ul>
+</nav>
+ 
+</header>
+
+
+<script language="JavaScript">
+  document.getElementsByClassName('menu-mobile')[0].style.display = 'none'
+
+  function toggle() {    
+    var state = document.getElementsByClassName('menu-mobile')[0].style.display;
+    if (state == 'block') {
+        document.getElementsByClassName('menu-mobile')[0].style.display = 'none';
+    } else {
+        document.getElementsByClassName('menu-mobile')[0].style.display = 'block';
+    }
+  }
+</script>
+
+
+
+<main>
+  
+  <div class="base-content">
+    <div id="aboutUs" class="base-container">
+      <h1 class="base-title">
+        Sobre o Museu
+      </h1>
+   
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium quis metus vel semper. Fusce pharetra leo lectus, in eleifend est condimentum et. Sed pulvinar tortor at condimentum congue. Cras ullamcorper suscipit felis eget faucibus. Fusce mollis semper ex, ut faucibus erat interdum et. Suspendisse hendrerit nibh sit amet dolor mollis convallis. Morbi convallis sem id pellentesque placerat. Quisque gravida, elit sit amet lacinia accumsan, massa metus tempor erat, vitae eleifend neque enim non nunc. Vivamus et odio condimentum, varius justo non, vulputate nisl. Aenean bibendum dolor non consectetur condimentum. Integer ac fermentum tellus, id porta quam.
+    </div>
+
+    <div id="collaborators" class="base-container">
+      <h1 class="base-title">
+        Colaboradores
+      </h1>
+      <div class="collaborators">
+          
+           <div class="collaborators__card">
+             <img src="http://localhost:3000/assets/images/collaborators/fabio-nobrega.jpeg" alt="Fábio R. Nóbrega">
+              <div class="collaborators__card--name">
+                Fábio R. Nóbrega
+              </div>
+              <div class="collaborators__card--role">
+                Software Developer
+              </div>
+              <a href="https://twitter.com/FabioRNobrega">                
+                <i class="fab fa-twitter"></i> FabioRNobrega
+              </a>
+              <a href="https://github.com/FabioRNobrega">
+                <i class="fab fa-github"></i> FabioRNobrega
+              </a>
+           </div>
+          
+           <div class="collaborators__card">
+             <img src="http://localhost:3000/assets/images/collaborators/fabio-nobrega.jpeg" alt="Fábio R. Nóbrega">
+              <div class="collaborators__card--name">
+                Fábio R. Nóbrega
+              </div>
+              <div class="collaborators__card--role">
+                Software Developer
+              </div>
+              <a href="https://twitter.com/FabioRNobrega">                
+                <i class="fab fa-twitter"></i> FabioRNobrega
+              </a>
+              <a href="https://github.com/FabioRNobrega">
+                <i class="fab fa-github"></i> FabioRNobrega
+              </a>
+           </div>
+          
+           <div class="collaborators__card">
+             <img src="http://localhost:3000/assets/images/collaborators/fabio-nobrega.jpeg" alt="Fábio R. Nóbrega">
+              <div class="collaborators__card--name">
+                Fábio R. Nóbrega
+              </div>
+              <div class="collaborators__card--role">
+                Software Developer
+              </div>
+              <a href="https://twitter.com/FabioRNobrega">                
+                <i class="fab fa-twitter"></i> FabioRNobrega
+              </a>
+              <a href="https://github.com/FabioRNobrega">
+                <i class="fab fa-github"></i> FabioRNobrega
+              </a>
+           </div>
+          
+           <div class="collaborators__card">
+             <img src="http://localhost:3000/assets/images/collaborators/fabio-nobrega.jpeg" alt="Fábio R. Nóbrega">
+              <div class="collaborators__card--name">
+                Fábio R. Nóbrega
+              </div>
+              <div class="collaborators__card--role">
+                Software Developer
+              </div>
+              <a href="https://twitter.com/FabioRNobrega">                
+                <i class="fab fa-twitter"></i> FabioRNobrega
+              </a>
+              <a href="https://github.com/FabioRNobrega">
+                <i class="fab fa-github"></i> FabioRNobrega
+              </a>
+           </div>
+        
+      </div>
+      
+    </div>
+
+    <div id="partners">
+      <div class="base-container">
+        <h1 class="base-title">
+          Parceiros
+        </h1>
+        <div class="partners">
+           
+          <div class="partners__container">
+            <a href="https://ufrj.br" target="_blank">
+              <img src="http://localhost:3000/assets/images/partners/ufrj-logo.png" alt="UFRJ">
+            </a>
+          </div>
+           
+          <div class="partners__container">
+            <a href="http://portal.nce.ufrj.br" target="_blank">
+              <img src="http://localhost:3000/assets/images/partners/nce-logo.png" alt="NCE">
+            </a>
+          </div>
+           
+          <div class="partners__container">
+            <a href="https://www.dcc.ufrj.br" target="_blank">
+              <img src="http://localhost:3000/assets/images/partners/dcc-logo.png" alt="DCC">
+            </a>
+          </div>
+          
+          </div>
+      </div>
+    </div>
+
+    <div id="howToGet" class="base-container">
+      <h1 class="base-title">
+        Como Chegar
+      </h1>
+      <p>
+        Av. Athos da Silveira Ramos, 274 – Edifício do Centro de Ciências Matemáticas e da Natureza – Bloco D – Cidade Universitária – Rio de Janeiro, RJ – CEP: 21941-916.
+      </p>
+      <p>
+        Tel.: (21) 3938-9400 / 3938-9401 / 3938-9441
+      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.528721923525!2d-43.23455338537605!3d-22.85691918503725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9979386e95f2e1%3A0x20a7d1ce2f645285!2sCenter%20for%20Mathematics%20and%20Nature%20(CCMN)%20-%20UFRJ!5e0!3m2!1sen!2sbr!4v1623166961905!5m2!1sen!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  
+
+
+</main>
+
+
+
+<footer>
+  <div class="footer">
+    <div class="footer__text">
+      <p>
+        Av. Athos da Silveira Ramos, 274 – Edifício do Centro de Ciências Matemáticas e da Natureza – Bloco D – Cidade Universitária – Rio de Janeiro, RJ – CEP: 21941-916.
+      </p>
+      <p>
+        Tel.: (21) 3938-9400 / 3938-9401 / 3938-9441
+      </p>
+    </div>
+
+    <div class="footer__list">
+      <ul>
+        <h4> Sobre </h4>
+        <li>
+          <a href="http://localhost:3000/about/#howToGet">
+            Como Chegar
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/about/#aboutNCE">
+            Sobre o NCE
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/about/#collaborators">
+            Colaboradores
+          </a>
+        </li>
+        <li>
+          <a href="http://localhost:3000/about/#partners">
+            Parceiros
+          </a>
+        </li>
+  
+      </ul>
+  
+    </div>
+    <div class="footer__list">
+      <ul>
+        <h4> Apoie </h4> 
+        <li>
+          <a href="">
+            Seja Voluntário
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Seja Patrocinador 
+          </a>
+        </li>
+        <li>
+          <a href="">
+            Doação de Itens
+          </a>
+        </li>
+      </ul>
+  
+    </div>
+    <div class="footer__social">
+      <a href="">
+        <i class="fab fa-twitter"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-instagram"></i>
+      </a>
+      <a href="">
+        <i class="fab fa-facebook-square"></i>
+     </a>
+    </div>
+  </div>
+</footer>
