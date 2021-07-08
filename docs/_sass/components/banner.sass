@@ -1,0 +1,71 @@
+@import "../_variables"
+@import "../_mixins"
+
+
+.banner 
+  position: relative
+  
+  &__image 
+    display: block
+    max-width: 100%
+    height: 600px
+    margin: auto
+    @include tablets-and-down
+      height: 400px
+    @include mobile-and-down
+      height: 200px
+
+  &__overlay
+    position: absolute
+    max-width: 100%
+    height: 600px
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background-color: rgba(0,0 ,0 ,0.8 )
+    @include tablets-and-down
+      height: 400px
+    @include mobile-and-down
+      height: 200px
+
+    
+    &--text 
+      color: $text-color
+      text-align: center
+      max-width: $container-width
+      margin: 140px auto
+      @include mobile-and-down
+        margin: 40px auto
+
+      &-quote 
+        font-weight: lighter
+        font-size: 36px
+        @include tablets-and-down
+          font-size: 20px
+          max-width: 80%
+          margin: auto
+
+          h2 
+            margin-bottom: 10px
+        
+      &-autor
+        font-size: 20
+        text-transform: uppercase
+        color: $primary-color
+        @include tablets-and-down
+          font-size: 14px
+          margin-top: 10px
+
+  
+  &__divider
+    width: 100%
+    height: 3px
+    margin: 10px 0
+    background: $primary-color
+    @include tablets-and-down
+      width: 90%
+      margin: auto
+
+ 
+  

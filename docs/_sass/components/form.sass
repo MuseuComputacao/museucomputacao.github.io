@@ -1,0 +1,47 @@
+@import "../_variables"
+@import "../_mixins"
+
+
+.form 
+
+  & p 
+    & a 
+      @include base-link
+      
+  & form 
+    @include display-col
+
+    & label 
+      font-size: 16px
+      font-weight: bold
+      color: $primary-color
+      
+    & input
+      width: 100%
+      padding: 12px 20px
+      margin: 8px 0
+      display: inline-block
+      border: 1px solid #ccc
+      border-radius: 4px
+      box-sizing: border-box
+
+    & textarea
+      padding: 12px 20px
+      height: 200px
+      margin: 8px 0
+      display: inline-block
+      border: 1px solid #ccc
+      border-radius: 4px
+      box-sizing: border-box
+
+    & button
+      @include base-button
+      width: 25%
+      @include mobile-and-down
+        width: 100%
+      
+
+
+
+    
+  
