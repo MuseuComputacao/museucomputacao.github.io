@@ -1,0 +1,90 @@
+---
+---
+
+{% include head.html %}
+
+{% include header.html %}
+
+<main>
+  
+  <div class="base-content">
+    <div id="aboutUs" class="base-container">
+      <h1 class="base-title">
+        {{ site.data.about.about_us.title }}
+      </h1>
+   
+      {{ site.data.about.about_us.content }}
+    </div>
+
+    <div id="aboutNCE" class="base-content__dark">
+      <div class="base-container">
+        <h1 class="base-title">
+          {{ site.data.about.about_nce.title }}
+        </h1>
+     
+        {{ site.data.about.about_nce.content }}
+      </div>
+    </div>
+
+    <div id="collaborators" class="base-container">
+      <h1 class="base-title">
+        Colaboradores
+      </h1>
+      <div class="collaborators">
+        {% for collaborator in site.data.about.collaborators %}  
+           <div class="collaborators__card">
+             <img src="{{ site.url }}/assets/images/collaborators/{{ collaborator.avatar }}" alt="{{ collaborator.name }}">
+              <div class="collaborators__card--name">
+                {{ collaborator.name }}
+              </div>
+              <div class="collaborators__card--role">
+                {{ collaborator.role}}
+              </div>
+              <a href="https://twitter.com/{{ collaborator.twitter }}">                
+                <i class="fab fa-twitter"></i> {{ collaborator.twitter }}
+              </a>
+              <a href="https://github.com/{{ collaborator.twitter }}">
+                <i class="fab fa-github"></i> {{ collaborator.twitter }}
+              </a>
+           </div>
+        {% endfor %}
+      </div>
+      
+    </div>
+
+    <div id="partners">
+      <div class="base-container">
+        <h1 class="base-title">
+          Parceiros
+        </h1>
+        <div class="partners">
+          {% for partner in site.data.about.partners %} 
+          <div class="partners__container">
+            <a href="{{ partner.url }}" target="_blank">
+              <img src="{{ site.url }}/assets/images/partners/{{ partner.logo }}" alt="{{ partner.name }}">
+            </a>
+          </div>
+          {% endfor %}
+          </div>
+      </div>
+    </div>
+
+    <div id="howToGet" class="base-container">
+      <h1 class="base-title">
+        Como Chegar
+      </h1>
+      <p>
+        {{ site.data.about.about_us.address }}
+      </p>
+      <p>
+        {{ site.data.about.about_us.phone }}
+      </p>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3676.528721923525!2d-43.23455338537605!3d-22.85691918503725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9979386e95f2e1%3A0x20a7d1ce2f645285!2sCenter%20for%20Mathematics%20and%20Nature%20(CCMN)%20-%20UFRJ!5e0!3m2!1sen!2sbr!4v1623166961905!5m2!1sen!2sbr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </div>
+  
+
+
+</main>
+
+{% include footer.html %}

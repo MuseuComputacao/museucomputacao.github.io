@@ -1,0 +1,59 @@
+{
+  "about_us": {
+    "title": "Sobre o Museu",
+    "content":  "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium quis metus vel semper. Fusce pharetra leo lectus, in eleifend est condimentum et. Sed pulvinar tortor at condimentum congue. Cras ullamcorper suscipit felis eget faucibus. Fusce mollis semper ex, ut faucibus erat interdum et. Suspendisse hendrerit nibh sit amet dolor mollis convallis. Morbi convallis sem id pellentesque placerat. Quisque gravida, elit sit amet lacinia accumsan, massa metus tempor erat, vitae eleifend neque enim non nunc. Vivamus et odio condimentum, varius justo non, vulputate nisl. Aenean bibendum dolor non consectetur condimentum. Integer ac fermentum tellus, id porta quam.",
+    "address": "Av. Athos da Silveira Ramos, 274 – Edifício do Centro de Ciências Matemáticas e da Natureza – Bloco D – Cidade Universitária – Rio de Janeiro, RJ – CEP: 21941-916.",
+    "phone": "Tel.: (21) 3938-9400 / 3938-9401 / 3938-9441"
+  },
+  "about_nce": {
+    "title": " Sobre o NCE",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium quis metus vel semper. Fusce pharetra leo lectus, in eleifend est condimentum et. Sed pulvinar tortor at condimentum congue. Cras ullamcorper suscipit felis eget faucibus. Fusce mollis semper ex, ut faucibus erat interdum et. Suspendisse hendrerit nibh sit amet dolor mollis convallis. Morbi convallis sem id pellentesque placerat. Quisque gravida, elit sit amet lacinia accumsan, massa metus tempor erat, vitae eleifend neque enim non nunc. Vivamus et odio condimentum, varius justo non, vulputate nisl. Aenean bibendum dolor non consectetur condimentum. Integer ac fermentum tellus, id porta quam."
+  },
+  "collaborators": [
+    {
+      "name": "Fábio R. Nóbrega",
+      "twitter": "FabioRNobrega",
+      "github": "FabioRNobrega",
+      "role":"Software Developer",
+      "avatar": "fabio-nobrega.jpeg"
+    },
+    {
+      "name": "Fábio R. Nóbrega",
+      "twitter": "FabioRNobrega",
+      "github": "FabioRNobrega",
+      "role":"Software Developer",
+      "avatar": "fabio-nobrega.jpeg"
+    },
+    {
+      "name": "Fábio R. Nóbrega",
+      "twitter": "FabioRNobrega",
+      "github": "FabioRNobrega",
+      "role":"Software Developer",
+      "avatar": "fabio-nobrega.jpeg"
+    },
+    {
+      "name": "Fábio R. Nóbrega",
+      "twitter": "FabioRNobrega",
+      "github": "FabioRNobrega",
+      "role":"Software Developer",
+      "avatar": "fabio-nobrega.jpeg"
+    }
+  ],
+  "partners": [
+    {
+      "name": "UFRJ",
+      "url": "https://ufrj.br",
+      "logo": "ufrj-logo.png"
+    },
+    {
+      "name": "NCE",
+      "url": "http://portal.nce.ufrj.br",
+      "logo": "nce-logo.png"
+    },
+    {
+      "name": "DCC",
+      "url": "https://www.dcc.ufrj.br",
+      "logo": "dcc-logo.png"
+    }
+  ]
+}
