@@ -16,16 +16,6 @@
       {{ site.data.about.about_us.content }}
     </div>
 
-    <div id="aboutNCE" class="base-content__dark">
-      <div class="base-container">
-        <h1 class="base-title">
-          {{ site.data.about.about_nce.title }}
-        </h1>
-     
-        {{ site.data.about.about_nce.content }}
-      </div>
-    </div>
-
     <div id="collaborators" class="base-container">
       <h1 class="base-title">
         Colaboradores
@@ -40,12 +30,16 @@
               <div class="collaborators__card--role">
                 {{ collaborator.role}}
               </div>
-              <a href="https://twitter.com/{{ collaborator.twitter }}">                
-                <i class="fab fa-twitter"></i> {{ collaborator.twitter }}
-              </a>
-              <a href="https://github.com/{{ collaborator.twitter }}">
-                <i class="fab fa-github"></i> {{ collaborator.twitter }}
-              </a>
+              {% if collaborator.twitter %}
+                <a href="https://twitter.com/{{ collaborator.twitter }}">                
+                  <i class="fab fa-twitter"></i> {{ collaborator.twitter }}
+                </a>
+              {% endif %}
+              {% if collaborator.github %}
+                <a href="https://github.com/{{ collaborator.github }}">
+                  <i class="fab fa-github"></i> {{ collaborator.github}}
+                </a>
+              {% endif %}
            </div>
         {% endfor %}
       </div>

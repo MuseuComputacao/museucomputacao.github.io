@@ -11,18 +11,36 @@ title: Museu da Computação
 
 ---
 
-# Sobre o Museu 
+### APRESENTAÇÃO
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus pretium quis metus vel semper. Fusce pharetra leo lectus, in eleifend est condimentum et. Sed pulvinar tortor at condimentum congue. Cras ullamcorper suscipit felis eget faucibus. Fusce mollis semper ex, ut faucibus erat interdum et. Suspendisse hendrerit nibh sit amet dolor mollis convallis. Morbi convallis sem id pellentesque placerat. Quisque gravida, elit sit amet lacinia accumsan, massa metus tempor erat, vitae eleifend neque enim non nunc. Vivamus et odio condimentum, varius justo non, vulputate nisl. Aenean bibendum dolor non consectetur condimentum. Integer ac fermentum tellus, id porta quam.
+O Museu da Computação da UFRJ foi oficialmente criado no ano de 2017 para apresentar artefatos tecnológicos desenvolvidos no Brasil e no mundo. Grande parte destes objetos foi projetada e/ou utilizada na Universidade entre as décadas de 1970 e 2000. O Museu tem por objetivo principal preservar a memória e apresentar a história de um período em que o país foi protagonista no processo de construção de um conhecimento tecnológico nacional que trouxe autonomia e contribuiu para a formação de centenas de profissionais brasileiros na área da Computação.
 
+Mais do que apenas apresentar peças, o Museu quer mostrar a história da construção de uma identidade nacional na área de Computação e expor os frutos desse conhecimento.
 
-Etiam sed nibh quis magna congue feugiat in id est. Nullam vestibulum nunc eget ligula rutrum convallis ut sit amet enim. Donec mattis rhoncus lobortis. Donec sit amet sapien at libero vestibulum maximus. Etiam volutpat, massa non scelerisque lobortis, lacus velit tincidunt libero, eu varius mauris erat sed arcu. Vivamus tempor, nisl vel molestie mattis, urna leo elementum nisl, ut luctus lacus justo id enim. Donec commodo arcu a velit interdum vestibulum. In vel tristique urna. Praesent maximus ac ex eget finibus. Aenean tincidunt, est eu ultricies eleifend, nisl quam dictum arcu, et consectetur ipsum ante in lacus. Phasellus nec purus vehicula, aliquet nisl nec, tincidunt erat. Curabitur iaculis eleifend ex, vel scelerisque odio venenatis eu. Phasellus vitae nisi sagittis, posuere lorem eu, consequat velit.
+Participam da construção do Museu da Computação o Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais (NCE/UFRJ), o Instituto de Computação (IC/UFRJ), o Programa de Pós-Graduação em Informática (PPGI/UFRJ) e o Programa de Pós-Graduação em História das Ciências e das Técnicas e Epistemologia (HCTE/UFRJ). A iniciativa é apoiada pelo Museu Nacional e integra também a Rede de Museus, Acervos e Patrimônios da Universidade Federal do Rio de Janeiro (SIMAP/UFRJ).
 
+### 50 ANOS DO NCE E LANÇAMENTO DO MARCO ZERO
+O lançamento do Marco Zero do Museu da Computação da UFRJ aconteceu em 2017. A primeira exposição foi criada para as comemorações dos 50 anos do Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais, o NCE/UFRJ, que, ao longo dos anos, preocupou-se em guardar protótipos, periféricos e equipamentos de testes que contam uma parte da história da Computação no Brasil. Os convidados para o Jubileu de Ouro do NCE tiveram a oportunidade de circular entre uma seleção de peças escolhidas para a ocasião. 
 
-Donec dictum nec massa at accumsan. Vestibulum auctor ante urna, eleifend maximus odio efficitur id. Pellentesque euismod purus eget dolor varius interdum. Vestibulum iaculis placerat turpis non mollis. Phasellus sodales lobortis sem, nec placerat justo aliquet at. Ut sed velit sem. Quisque blandit nisl non neque lacinia, iaculis dignissim lacus dapibus. Cras lacinia fermentum ultrices.
+### PÚBLICO ALVO
+Nos anos de 2017 a 2019, o Museu da Computação da UFRJ recebeu alunos e professores dos cursos de graduação e pós-graduação da UFRJ, turmas do curso de Ciência da Computação, cursos técnicos de Informática e historiadores da Informática. Mas possui potencial para expandir seu público através de atividades educativas, exposições temáticas, acessibilidade cultural e interações/experimentações.  
 
+### PROPOSTA DO MUSEU
+Imergir os visitantes na atmosfera dos primórdios da computação no Brasil;
+Permitir a interação de visitantes com as peças do Museu em linguagem natural, usando o sistema IBM Watson;
+Oferecer experiências na área de retrocomputação e uso de emuladores;
+Usar tecnologia para oferecer interações em realidade virtual e realidade aumentada; 
+Usar tecnologia para permitir acessibilidade cultural a portadores de necessidades especiais; 
+Oferecer atividades educativas;
+Apresentar exposições temáticas que explorem a evolução das tecnologias; personagens e empresas que fazem parte da história da Computação no Brasil; aplicações; games, dentre outras. 
 
-Nulla pulvinar molestie velit feugiat mollis. Fusce blandit nunc non mi pretium porta. In ac egestas nisl. Phasellus in dolor nisl. Nunc vulputate, urna non placerat ultrices, odio ex viverra neque, luctus molestie augue justo id neque. Proin suscipit quam eget urna maximus, et viverra lectus volutpat. Vivamus risus felis, convallis eget metus eu, mollis lacinia orci. Mauris auctor, tortor at scelerisque viverra, tellus purus volutpat lorem, at ullamcorper erat nibh eu urna. Vivamus iaculis, dui vitae finibus vehicula, lacus urna ultricies ante, nec consectetur est nisi non felis. Vestibulum quis eros metus. Morbi suscipit a justo non rhoncus. Donec in enim vel neque lobortis tempus et sed justo. In auctor nisl in aliquet vehicula. Mauris euismod velit vitae leo finibus, vel luctus risus blandit.
+### VISITE O MUSEU DA COMPUTAÇÃO DA UFRJ
+O Museu da Computação da UFRJ ocupa uma área de cerca de 400 m2, contígua ao Museu da Geodiversidade do Instituto de Geociências/UFRJ.
+O espaço físico ocupado já é definitivo, mas precisa de obras de adequação para ser utilizado em sua totalidade. Mesmo assim, já recebe visitantes mediante prévio agendamento*. Na visita mediada, o público tem o privilégio de ouvir as histórias de cada objeto contadas em primeira pessoa, por alguns dos próprios desenvolvedores dos projetos, muitos deles ainda atuantes no NCE. 
 
+### O MUSEU E A EXTENSÃO UNIVERSITÁRIA
+Uma atividade de extensão da UFRJ envolve alunos de graduação e pós-graduação no desenvolvimento de aplicações computacionais para o museu físico e virtual. A equipe multidisciplinar integrada por pesquisadores, docentes e alunos vêm atuando na preservação e difusão da história da computação e seu uso no Brasil e no mundo.
+O Museu Virtual levará o Museu da Computação da UFRJ para além das fronteiras, permitindo acesso de público diversificado a este conteúdo e servindo de fonte de entretenimento e cultura.
 
-Ut non quam ut leo gravida tempor. Morbi egestas elit non dui aliquam, vitae ultricies lectus varius. Quisque fringilla finibus nulla id rhoncus. Maecenas sit amet commodo sem. Sed mauris risus, tristique porta ultricies et, mollis id nisi. Integer auctor mi nulla, interdum feugiat odio sagittis sed. Sed ultricies quam et ipsum vulputate, et pellentesque elit porttitor. Nulla in mi aliquam, laoreet lacus at, laoreet diam.
+### PARCERIAS
+O Museu busca parcerias com empresas que queiram apoiar a preservação e a disseminação deste acervo de memórias da Computação brasileira. Busca também recursos oriundos de patrocínios para custear despesas com obras de readequação do espaço, manutenção, pagamento de bolsas, desenvolvimento de projetos educativos, dentre outras atividades. As empresas parceiras poderão efetivamente participar do Museu apresentando, em exposições temporárias, suas tecnologias atuais ou futuras. Convidamos sua empresa a unir-se a nós na construção deste sonho!

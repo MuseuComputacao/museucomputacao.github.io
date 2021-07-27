@@ -12,6 +12,7 @@
     max-width: 200px
     text-align: center
     line-height: 20px
+    margin-top: 20px
     @include display-col
     @include tablets-and-down
       width: 100%
@@ -21,8 +22,10 @@
     & img 
       border-radius: 100%
       max-width: 150px
+      margin: auto
+      margin-bottom: 0
+      margin-top: 0
       @include tablets-and-down
-        margin: auto
     
     &--name 
       font-size: 20px
@@ -47,9 +50,7 @@
 
   &__container
     display: flex
-    height: 200px
-    width: 300px
-    padding: 40px
+    padding: 20px
     justify-content: center
     align-items: center
     @include tablets-and-down
@@ -58,8 +59,6 @@
 
 
     & img 
-      max-height: 200px
-      max-width: 300px
       @include tablets-and-down
         max-width: 100%
         max-height: 100%
