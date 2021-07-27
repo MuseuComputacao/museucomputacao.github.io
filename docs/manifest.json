@@ -3,11 +3,11 @@
 {
   "lang": "pt-BR",
   "dir": "ltr\rtl",
-  "name": "PWA do Museu da Computação",
-  "short_name": "Museu da Computação",
+  "name": "Museu da Computação da UFRJ",
+  "short_name": "MC-UFRJ",
   "icons": [
     {
-      "src": "\/assets\/images\/logo-museu.png",
+      "src": "\/assets\/images\/logo-museu-app.png",
       "sizes": "192x192",
       "type": "image\/png"
     }
