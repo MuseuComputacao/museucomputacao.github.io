@@ -1,6 +1,6 @@
 # Site Museu da Computação UFRJ 
 
-Esse projeto é o MVP do site do museu ele foi desenvolvido com [jekyll](https://jekyllrb.com/) e tem a intenção de ser nosso primeiro contado com a comunidade. Adicionando assim blog posts e pequenas exposições virtuais. 
+Esse projeto é o MVP do [site do museu](https://museucomputacao.github.io) ele foi desenvolvido com [jekyll](https://jekyllrb.com/) e tem a intenção de ser nosso primeiro contado com a comunidade. Adicionando assim blog posts e pequenas exposições virtuais. 
 
 Nós usamos
 
