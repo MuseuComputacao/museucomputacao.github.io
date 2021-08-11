@@ -1,0 +1,23 @@
+<article class="postcard">
+    <a class="postcard__img_link" href="{{ site.baseurl }}{{ post.url }}">
+        <img class="postcard__img" src="https://picsum.photos/2000/1500" alt="Image Title" />
+        <!--<img class="postcard__img" src="{{ site.baseurl }}/assets/images/logo.png" alt="Image Title" />-->
+    </a>
+    <div class="postcard__text">
+        <h1 class="postcard__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
+        <div class="postcard__subtitle small">
+            <time datetime="2020-05-25">
+                <i class="fas fa-calendar-alt mr"></i>{{ post.date | date_to_string }} por {{ post.author}}
+            </time>
+        </div>
+        <div class="postcard__bar"></div>
+        <div class="postcard__preview-txt">{{ post.description }}</div>
+        <ul class="postcard__tagbox">
+            <li class="tag__item"><i class="fas fa-tag mr"></i>{{ post.tags }}</li>
+            <li class="tag__item"><i class="fas fa-clock mr"></i>{% include readtime.html content=post.content%}</li>
+            <li class="tag__item play">
+                <a href="{{ site.baseurl }}{{ post.url }}"><i class="fas fa-play mr"></i>Continue lendo</a>
+            </li>
+        </ul>
+    </div>
+</article>
