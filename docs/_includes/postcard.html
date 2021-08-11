@@ -1,7 +1,10 @@
 <article class="postcard">
     <a class="postcard__img_link" href="{{ site.baseurl }}{{ post.url }}">
-        <img class="postcard__img" src="https://picsum.photos/2000/1500" alt="Image Title" />
-        <!--<img class="postcard__img" src="{{ site.baseurl }}/assets/images/logo.png" alt="Image Title" />-->
+        {% if post.image == null %}
+        <img class="postcard__img" src="{{ site.baseurl }}/assets/images/banner.jpg" alt="Image Title" />
+        {% else %}
+        <img class="postcard__img" src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="Image Title" />
+        {% endif %}
     </a>
     <div class="postcard__text">
         <h1 class="postcard__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
