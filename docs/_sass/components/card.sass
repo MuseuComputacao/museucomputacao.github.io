@@ -1,0 +1,59 @@
+@import "../_mixins"
+@import "../_variables"
+
+.card
+    background-color: $text-color
+    border-style: hidden
+    min-height: 300px
+    width: 250px
+    text-align: justify
+    overflow: hidden
+    border-radius: 10px
+    margin: 15px 20px
+    @include display-col
+    @include tablets-and-down
+        min-height: 300px
+        min-width: 200px
+
+    &-section-title
+        margin-bottom: 0 !important
+        padding-bottom: 0 !important
+
+    &-title
+        margin-top: 5%
+        padding: 5px
+        color: $bg-color
+    .card-text
+        padding: 0px 10px
+        word-wrap: break-word
+        white-space: normal
+        word-break: break-word
+        color: $bg-color
+        text-align: justify
+        text-indent: 0.5em
+    img
+        max-height: 90px
+        width: 100%
+        object-fit: cover
+        position: relative
+        transition: all 0.3s ease
+
+.btn
+    display: block
+    border-style: hidden
+    background: rgba(83, 83, 83, 0.4)
+    color: $text-color
+
+a.btn:hover
+    background-color: $primary-color
+    color: $text-color
+
+.sections
+    @include tablets-and-down
+        margin-top: 11vw
+    @include mobile-and-down
+        margin-top: 15vh
+
+.icon-card
+    cursor: default
+    margin: auto

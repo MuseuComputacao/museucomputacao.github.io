@@ -16,19 +16,12 @@
   </div>
 
   <div class="base-content__dark">
+    <h2 class="base-container card-section-title">Ultimos posts</h2>
     <div class="card-row">
-      {% for post in site.posts %}     
-        <a class="card" href="{{ post.url }}">
-          <div class="card__title">
-            {{ post.title }}
-          </div>
-          <p>
-            <time datetime="{{ post.date }}"> {{ post.date | date_to_string }} </h1>
-          </p>
-          <p>
-            by {{ post.autor }}
-          </p> 
-        </a>
+      {% for post in site.posts limit:3 %}
+      <a class="card-link" href="{{ post.url }}">
+        {% include card.html type=post %}
+      </a>
       {% endfor %}
     </div>
   </div>
