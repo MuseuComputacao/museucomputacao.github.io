@@ -3,42 +3,44 @@
 {% assign prop = site.data.default.card[0] %}
 {% endif %}
 
-<div class="card">
-    {% if post.image == null %}
-    <img class="card-img-top" src="{{ site.baseurl }}/assets/images/museu-icon.png"
-        alt="{{ site.baseurl }}/assets/images/{{prop.title}}" />
-    {% else %}
-    <img class="card-img-top" src="{{ site.baseurl }}/assets/images/{{ post.image }}"
-        alt="{{ site.baseurl }}/assets/images/{{prop.title}}" />
-    {% endif %}
-    <div class="card-body d-flex flex-column">
-        <div>
-            <h3 class="card-title">
-                {{ prop.title }}
-            </h3>
-            <hr class="hr-card">
-        </div>
-        <div class="row">
-            <div class="my-2 col-12 icon-card">
-                {% if prop.unity %}
-                <i class="fab fa-unity icon-card"></i>
-                {% endif %}
+<a href="{{ post.url }}">
+    <div class="card">
+        {% if post.image == null %}
+        <img class="card-img-top" src="{{ site.baseurl }}/assets/images/museu-icon.png"
+            alt="{{ site.baseurl }}/assets/images/{{prop.title}}" />
+        {% else %}
+        <img class="card-img-top" src="{{ site.baseurl }}/assets/images/{{ post.image }}"
+            alt="{{ site.baseurl }}/assets/images/{{prop.title}}" />
+        {% endif %}
+        <div class="card-body d-flex flex-column">
+            <div>
+                <h3 class="card-title">
+                    {{ prop.title }}
+                </h3>
+                <hr class="card-hr">
+            </div>
+            <div class="row">
+                <div class="my-2 col-12 icon-card">
+                    {% if prop.unity %}
+                    <i class="fab fa-unity icon-card"></i>
+                    {% endif %}
 
-                {% if prop.desktop %}
-                <i class="fas fa-desktop icon-card"></i>
-                {% endif %}
+                    {% if prop.desktop %}
+                    <i class="fas fa-desktop icon-card"></i>
+                    {% endif %}
 
-                {% if prop.mobile %}
-                <i class="fas fa-mobile-alt icon-card"></i>
-                {% endif %}
+                    {% if prop.mobile %}
+                    <i class="fas fa-mobile-alt icon-card"></i>
+                    {% endif %}
 
-                {{ prop.language }}
+                    {{ prop.language }}
+                </div>
+            </div>
+            <div>
+                <p class="card-text">
+                    {{ prop.description }}
+                </p>
             </div>
         </div>
-        <div>
-            <p class="card-text">
-                {{ prop.description }}
-            </p>
-        </div>
     </div>
-</div>
+</a>

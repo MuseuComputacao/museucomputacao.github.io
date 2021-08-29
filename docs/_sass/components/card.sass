@@ -4,12 +4,15 @@
 .card
     background-color: $text-color
     border-style: hidden
-    min-height: 300px
+    height: 360px
     width: 250px
-    text-align: justify
+    text-align: left
     overflow: hidden
     border-radius: 10px
     margin: 15px 20px
+    word-wrap: break-word
+    white-space: normal
+    word-break: break-word
     @include display-col
     @include tablets-and-down
         min-height: 300px
@@ -20,19 +23,22 @@
         padding-bottom: 0 !important
 
     &-title
-        margin-top: 5%
-        padding: 5px
+        padding: 5px 10px
         color: $bg-color
+
+    &-hr
+        border: 0
+        height: 2px
+        background: $primary-color
+
     .card-text
         padding: 0px 10px
-        word-wrap: break-word
-        white-space: normal
-        word-break: break-word
         color: $bg-color
         text-align: justify
         text-indent: 0.5em
+        line-height: 1.25em
     img
-        max-height: 90px
+        height: 160px
         width: 100%
         object-fit: cover
         position: relative
