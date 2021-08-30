@@ -17,29 +17,19 @@
                 <h3 class="card-title">
                     {{ prop.title }}
                 </h3>
-                <hr class="card-hr">
-            </div>
-            <div class="row">
-                <div class="my-2 col-12 icon-card">
-                    {% if prop.unity %}
-                    <i class="fab fa-unity icon-card"></i>
-                    {% endif %}
-
-                    {% if prop.desktop %}
-                    <i class="fas fa-desktop icon-card"></i>
-                    {% endif %}
-
-                    {% if prop.mobile %}
-                    <i class="fas fa-mobile-alt icon-card"></i>
-                    {% endif %}
-
-                    {{ prop.language }}
-                </div>
             </div>
             <div>
                 <p class="card-text">
                     {{ prop.description }}
                 </p>
+            </div>
+            <div>
+                <time datetime="2020-05-25" class="card-date-published">
+                    <i class="fas fa-calendar-alt mr"></i>{{ post.date | date_to_string }}
+                </time>
+                <a class="card-read-more" href="{{ post.url }}">
+                    <h5>Leia mais</h5>
+                </a>
             </div>
         </div>
     </div>
