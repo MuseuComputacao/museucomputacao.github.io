@@ -1,0 +1,37 @@
+{% assign prop = include.type %}
+{% if prop == null %}
+{% assign prop = site.data.default.card[0] %}
+{% endif %}
+
+<a href="{{ post.url }}">
+    <div class="card">
+        {% if post.image == null %}
+        <img class="card-img-top" src="{{ site.baseurl }}/assets/images/museu-icon.png"
+            alt="{{ site.baseurl }}/assets/images/{{prop.title}}" />
+        {% else %}
+        <img class="card-img-top" src="{{ site.baseurl }}/assets/images/{{ post.image }}"
+            alt="{{ site.baseurl }}/assets/images/{{prop.title}}" />
+        {% endif %}
+        <div class="card-hide-expand"></div>
+        <div class="card-body d-flex flex-column">
+            <div>
+                <h3 class="card-title">
+                    {{ prop.title }}
+                </h3>
+            </div>
+            <div>
+                <p class="card-text">
+                    {{ prop.description }}
+                </p>
+            </div>
+            <div>
+                <time datetime="2020-05-25" class="card-date-published">
+                    <i class="fas fa-calendar-alt mr"></i>{{ post.date | date_to_string }}
+                </time>
+                <a class="card-read-more" href="{{ post.url }}">
+                    <h5>Leia mais</h5>
+                </a>
+            </div>
+        </div>
+    </div>
+</a>

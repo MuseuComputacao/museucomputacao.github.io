@@ -5,7 +5,7 @@
 {% include header.html %}
 
 <main>
-  
+
   {% include banner.html %}
 
   <div class="base-content">
@@ -16,19 +16,24 @@
   </div>
 
   <div class="base-content__dark">
+    <h2 class="base-container card-section-title">Ultimos posts</h2>
     <div class="card-row">
-      {% for post in site.posts %}     
-        <a class="card" href="{{ post.url }}">
-          <div class="card__title">
-            {{ post.title }}
-          </div>
-          <p>
-            <time datetime="{{ post.date }}"> {{ post.date | date_to_string }} </h1>
-          </p>
-          <p>
-            by {{ post.autor }}
-          </p> 
-        </a>
+      {% for post in site.posts limit:3 %}
+      <div class="card-link">
+        {% include card.html type=post %}
+      </div>
+      {% endfor %}
+    </div>
+    <h2 class="base-container card-section-title">Posts recentes</h2>
+    <div class="base-container recent-posts">
+      {% for post in site.posts limit:10 offset: 3 %}
+      {% if post.tags-icon == null %}
+      <a href="{{ post.url }}"><i class="fas fa-robot home-icon"></i>{{ post.title}}</a>
+      <hr>
+      {% else %}
+      <a href="{{ post.url }}"><i class="{{ post.tags-icon}} home-icon"></i>{{ post.title}}</a>
+      <hr>
+      {%endif%}
       {% endfor %}
     </div>
   </div>
