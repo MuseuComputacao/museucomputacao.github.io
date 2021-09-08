@@ -37,6 +37,7 @@ Agora devemos criar uma lista de JSON dentro desse aquivo. Para isso precismos i
 > OBS: Lembre sempre de depois de declarar uma propriedade adicionar uma vírgula caso haja uma propriedade subsequente.
 
 ```
+{
   "myList": [
     {
       "name": "Item 1",
@@ -92,7 +93,14 @@ Agora que temos nosso arquivo JSON setado com os dados que precisamos renderizar
   {% endraw %}
 {% endhighlight %}
 
-Neste exemplo estamos fazendo um laço `FOR` para iterar pela lista `myList` acessando atraves do caminho padrão do jekyll `site.data` site faz referência ao seu projeto e data a pasta `_data`, já o `myData` é o nome do arquivo json que representa o objeto global declarado anteriormente. Assim o `myList`é a propriedade array que criamos. A estrutura de decisão encadeada `IF` serve para validarmos a propriedade booliana do nosso JSON. Portanto nesse exemplo termos renderizado apenas o item 1 e 3. 
+Neste exemplo estamos fazendo um laço `FOR` para iterar pela lista `myList` acessando atraves do caminho padrão do jekyll `site.data` site faz referência ao seu projeto e data a pasta `_data`, já o `myData` é o nome do arquivo json que representa o objeto global declarado anteriormente. Assim o `myList` é a propriedade array que criamos. A estrutura de decisão encadeada `IF` serve para validarmos a propriedade booliana do nosso JSON. Portanto nesse exemplo termos renderizado apenas o item 1 e 3. 
 
 
 ### YML
+
+https://jekyllrb.com/docs/datafiles/
+
+
+### CSV
+
+https://jekyllrb.com/tutorials/csv-to-table/
