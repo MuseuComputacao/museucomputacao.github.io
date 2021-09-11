@@ -74,7 +74,7 @@ Agora que temos nosso arquivo JSON setado com os dados que precisamos renderizar
     {% if item.active %}
       <div class="items__card">
         <img 
-          src="{{ site.url }}/assets/{{ items.image }}" 
+          src="{{ site.url }}/assets/{{ item.image }}" 
           alt="{{ item.name }}"
         >
         <div class="items__card--name">
@@ -98,7 +98,72 @@ Neste exemplo estamos fazendo um laço `FOR` para iterar pela lista `myList` ace
 
 ### YML
 
-https://jekyllrb.com/docs/datafiles/
+YML tambem conhecido como YAML é um acronimo para "YAML Ain't Markup Language" ou em portugues  "YAML não é linguagem de marcação". De forma controversa é uma linguagem de serialização de dados legíveis por seres humanos, isto é, uma tentativa de criar uma formatação de dados de alto nivel, baseado no [XML](https://pt.wikipedia.org/wiki/XML). De forma resumida, o YML cria uma relação de dados bem semelhante ao JSON diminuido a quantidade de caracteres escritos. 
+
+Veja-mos essa construção na prática. Em sua aplicação precisamos criar um arquivo com  um identificador do tipo de dados dentro da pasta `_data`. Neste caso criamos o `myData.yml` ou `myData.yaml` sendo o `.yml` ou `.yaml` a extensão do arquivo do tipo YML. Para fins didáticos vamos seguir essa explicação se utilizando da extensão `.yml`, uma vez que o que realmente importa é o conteudo do arquivo. Essa multipla possibilidade de criar um arquivo YML se dá através da historia onde os sistemas operacionais com windows não aceitavam extensões de dados com mais de três caracteres. 
+
+{% highlight bash linenos %}
+
+  |-- docs
+  |----- _data
+  |----- myData.yml
+
+{% endhighlight %}
+
+
+Agora vamos criar uma lista de dados dentro desse aquivo YML. Dentro desse arquivo vamos criar uma lista de dados chamada `myList`mara isso basta criar uma propriedade seguida por dois pontos `:`. Em seguida o que define seu conteudo será a indentação do seu arquivo. Iniciando cada nova propriedade com um hífen `-`e declarando as propriedade seguidas com dois pontos basta seguir seus tipo , srting como texto livre, number como número e booleano como true ou false. Assim como demonstra o exemplo a baixo. 
+
+
+{% highlight yml linenos %}
+  myList:
+    - name: Item 1
+      image: 1item1.jpeg
+      size: 100
+      active: true
+      url: http://item1.com
+
+    - name: Item 2
+      image: item2.jpeg
+      size: 100
+      active: false
+      url: http://item2.com
+
+    - name: Item 3
+      image: item3.jpeg
+      size: 100
+      active: true
+      url: http://item3.com
+{% endhighlight %}
+
+Agora assim como no JSON podemos fazer um laço de interação `FOR` seguido por um estrutura de decisão encadeada `IF` e assim teremos uma lista de card renderizados. 
+
+{% highlight html linenos%}
+  {% raw %}
+    <div class="items">
+      {% for item in site.data.myData.myList %}  
+        {% if item.active %}
+          <div class="items__card">
+            <img 
+              src="{{ site.url }}/assets/{{ item.image }}" 
+              alt="{{ item.name }}"
+            >
+            <div class="items__card--name">
+              {{ item.name }}
+            </div>
+            <a 
+              class="items__card--url" 
+              href="{{ item.url }}"  
+            >                
+              {{ item.url }}
+            </a>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  {% endraw %}
+{% endhighlight %}
+
+Neste exemplo estamos fazendo um laço `FOR` para iterar pela lista `myList` acessando atraves do caminho padrão do jekyll `site.data` onde a variável `site` faz referência ao seu projeto raiz e `data` à pasta `_data`, já o `myData` é o nome do arquivo yml que representa o objeto global declarado anteriormente. Assim o `myList` é a propriedade array que criamos. A estrutura de decisão encadeada `IF` serve para validarmos a propriedade booleana do nosso JSON. Portanto nesse exemplo termos renderizado apenas o item 1 e 3. 
 
 
 ### CSV
