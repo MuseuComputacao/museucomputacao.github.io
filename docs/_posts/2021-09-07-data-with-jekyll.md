@@ -68,7 +68,7 @@ Agora devemos criar uma lista de JSON dentro desse aquivo. Para isso precismos i
 Agora que temos nosso arquivo JSON setado com os dados que precisamos renderizar precisamos apenas adicionar a logica de laço em algum layout do nosso projeto jekyll. Como mostra o exemplo. 
 
 {% highlight html linenos%}
-  {% raw %}
+{% raw %}
 <div class="items">
   {% for item in site.data.myData.myList %}  
     {% if item.active %}
@@ -90,7 +90,7 @@ Agora que temos nosso arquivo JSON setado com os dados que precisamos renderizar
     {% endif %}
   {% endfor %}
 </div>
-  {% endraw %}
+{% endraw %}
 {% endhighlight %}
 
 Neste exemplo estamos fazendo um laço `FOR` para iterar pela lista `myList` acessando atraves do caminho padrão do jekyll `site.data` site faz referência ao seu projeto e data a pasta `_data`, já o `myData` é o nome do arquivo json que representa o objeto global declarado anteriormente. Assim o `myList` é a propriedade array que criamos. A estrutura de decisão encadeada `IF` serve para validarmos a propriedade booliana do nosso JSON. Portanto nesse exemplo termos renderizado apenas o item 1 e 3. 
