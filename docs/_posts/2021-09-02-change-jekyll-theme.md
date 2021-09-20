@@ -44,7 +44,7 @@ Um novo projeto no Jekyll tem esta estrutura:
 └── index.markdown
 {% endhighlight %}
 
-**O primeiro passo para se customizar o tema do site é incluir os diretórios `_include`, `_layouts`, `_sass`, `assets` na root do projeto para customizar o site**. Mesmo que os diretórios tenham sido criados, como não há arquivo nenhum dentro deles, o jekyll continuará a renderizar o conteúdo do Minima. Para criar o nosso tema, teremos então que adicionar nossas mudanças nos diretórios correspondentes. Após criar estes diretórios, a estrutura do projeto ficará assim: 
+**O primeiro passo para se customizar o tema do site é incluir os diretórios `_include`, `_layouts`, `_sass`, `assets` na root do projeto para começar a customização**. Mesmo que os diretórios tenham sido criados, como não há arquivo nenhum dentro deles, o jekyll continuará a renderizar o conteúdo do Minima. Para criar o nosso tema, teremos então que adicionar nossas mudanças nos diretórios correspondentes. Após criar estes diretórios, a estrutura do projeto ficará assim: 
 
 {% highlight bash linenos %}
 .
@@ -65,7 +65,7 @@ Um novo projeto no Jekyll tem esta estrutura:
 
 O diretório assets serve para guardar qualquer arquivo que seja útil para o site, como imagens, arquivos svg, pdfs, dentre muitos outros. Este diretório também armazena o arquivo css que o jekyll irá usar para buildar o site.
 **Após criarmos o diretório `assets`, iremos criar um outro diretório dentro dele, chamado `css`**, será aqui que irá ficar o arquivo sass principal que será convertido para css.
-**Assim, devemos criar o arquivo `main.sass`.** Esse arquivo vai somente importar o `main.sass` do diretório `_sass`. Poderíamos, por exemplo, criar todos os estilos usados no site dentro deste arquivo sass, mas, para deixar-mos mais organizado, iremos apenas importar o `main.sass` do diretório `_sass` neste arquivo. E então, o arquivo main dentro de assets/css fica da seguinte forma:
+**Após isso, devemos criar o arquivo `main.sass`.** Esse arquivo vai somente importar o `main.sass` do diretório `_sass`. Poderíamos, por exemplo, criar todos os estilos usados no site dentro deste arquivo sass, mas, para deixar-mos mais organizado, iremos apenas importar o `main.sass` do diretório `_sass` neste arquivo. E então, o arquivo main dentro de assets/css fica da seguinte forma:
 
 {% highlight liquid linenos%}
 {% raw %}
@@ -78,7 +78,7 @@ O diretório assets serve para guardar qualquer arquivo que seja útil para o si
 
 ## _sass
 
-Sass (em inglês, "syntactically awesome stylesheets", ou "folhas de estilo sintaticamente incríveis") é uma linguagem de folhas de estilo. Sass é uma linguagem de script que é interpretada ou compilada em Cascading Style Sheets (CSS). **O jekyll tem suporte nativo ao Sass, e, para usarmos, basta criar um arquivo com o nome `main.sass` dentro do diretório `_sass`**. Por motivos de organização, iremos criar um arquivo .sass para cada componente que iremos fazer, assim como também podemos criar para cada view que quisermos, e, para cada novo arquivo sass que criarmos, devemos importa-lo no `main.sass` para que ele possa ser enviado para o `main.sass` do diretório `assets` e consequentemente, renderizado no site. Além do `main.sass`, ainda criaremos o arquivo `_variables.sass` que irá armazenar as variáveis que iremos usar para padronizar o projeto, e para usar estas variáveis, basta dar um `import` dentro do arquivo sass que desejar usar e usar a sintaxe `$nome-da-variavel` quando quiser usar algum valor dentro de `_variables.sass`. No nosso projeto, usaremos as seguintes variaveis:
+Sass (em inglês, "syntactically awesome stylesheets", ou "folhas de estilo sintaticamente incríveis") é uma linguagem de folhas de estilo que é interpretada ou compilada em Cascading Style Sheets (CSS). **O jekyll tem suporte nativo ao Sass, e, para usarmos, basta criar um arquivo com o nome `main.sass` dentro do diretório `_sass`**. Por motivos de organização, iremos criar um arquivo .sass para cada componente que iremos fazer, assim como também podemos criar para cada view que quisermos, e, para cada novo arquivo sass que criarmos, devemos importa-lo no `main.sass` para que ele possa ser enviado para o `main.sass` do diretório `assets` e consequentemente, renderizado no site. Além do `main.sass`, ainda criaremos o arquivo `_variables.sass` que irá armazenar as variáveis que iremos usar para padronizar o projeto, e para usar estas variáveis, basta dar um `import` dentro do arquivo sass que desejar usar e usar a sintaxe `$nome-da-variavel` quando quiser usar algum valor dentro de `_variables.sass`. No nosso projeto. O arquivo `_variables.sass` terá as seguintes variáveis:
 
 {% highlight sass linenos %}
 {% raw %}
@@ -91,7 +91,7 @@ $contrast-color: #04AA6D
 
 ## _include
 
-**O include é uma forma de colocar o mesmo elemento várias vezes em uma mesma página** ou em páginas diferentes sem ter que repetir o código fonte, deixando assim o html mais limpo e legível. **Como os includes são uma cópia do código fonte original, basta modificar o código fonte que as mudanças serão refletidas em todas as instâncias daquele elemento. Portanto, criaremos dentro do diretório _includes(que acabamos de criar), o arquivo `head.html`** com as informações básicas do site:
+**O include é uma forma de colocar o mesmo elemento várias vezes em uma mesma página** ou em páginas diferentes sem ter que repetir o código fonte, deixando assim o html mais limpo e legível. **Como os includes são uma cópia do código fonte original, basta modificar o código fonte que as mudanças serão refletidas em todas as instâncias daquele elemento.** Portanto, criaremos dentro do diretório _includes, o arquivo `head.html` com as informações básicas do site:
 
 {% highlight html linenos %}
 {% raw %}
@@ -128,7 +128,7 @@ E também iremos criar o arquivo `header.html` que irá conter o html da nossa N
 {% endraw %}
 {% endhighlight %}
 
-Para finalizar o header, basta criar o estilo dele, para isso, dentro do diretório `_sass`, criaremos um diretório chamado `components`. O diretório components irá conter todos os estilos dos includes do nosso site. Portanto, criaremos um arquivo chamado `header.sass`. Esse arquivo irá conter o seguinte:
+Para finalizar o header, basta criar o estilo dele, para isso, dentro do diretório `_sass`, criaremos um diretório chamado `components`. O diretório components irá conter todos os estilos dos includes do nosso site. Portanto, criaremos um arquivo chamado `header.sass`. Esse arquivo irá conter o seguinte estilo para a header:
 
 {% highlight sass linenos%}
 {% raw %}
@@ -185,6 +185,8 @@ Agora, iremos criar o footer usando a mesma lógica do header. Basta criar um ar
 {% endraw %}
 {% endhighlight %}
 
+E o estilo do footer no `_sass/components`.
+
 {% highlight sass linenos%}
 {% raw %}
 @import "../_variables"
@@ -202,7 +204,7 @@ footer
 {% endraw %}
 {% endhighlight %}
 
-Para incluir um elemento a alguma página, basta usar o comando {%raw%}`{% include nome-do-include.html %}`{%endraw%}.
+Por fim, para incluir um elemento a alguma página, basta usar o comando {%raw%}`{% include nome-do-include.html %}`{%endraw%}.
 
 {% highlight liquid linenos%}
 {% raw %}
@@ -238,7 +240,7 @@ Para incluir um elemento a alguma página, basta usar o comando {%raw%}`{% inclu
 {% endraw %}
 {% endhighlight %}
 
-o `content` é uma variável especial, o valor é o conteúdo renderizado do post ou da página que está sendo encapsulado. A variável `page.title`, por sua vez, é obtida através das metatags da página que está a ser desenvolvida. Usaremos então o arquivo `index.markdown` para criar nossa página principal.
+O `content` é uma variável especial. O valor é o conteúdo renderizado do post ou da página que está sendo encapsulado. A variável `page.title`, por sua vez, é obtida através da [front matter](https://jekyllrb.com/docs/front-matter/) da página que está a ser desenvolvida. E, por fim, usaremos o arquivo `index.markdown` para criar nossa página principal.
 
 {% highlight liquid linenos%}
 {% raw %}
