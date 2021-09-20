@@ -1,7 +1,11 @@
 @import "_mixins"
   
 .highlight
-  background: #ffffff 
+  background: #eef
+  margin: 10px 0
+  padding: 5px 
+  overflow: hidden
+
   .c  
     color: #999988 
     font-style: italic  // Comment 
@@ -184,3 +188,15 @@ figure
   @include tablets-and-down
     margin-inline-start: 0
     margin-inline-end: 0
+  table
+    border-collapse: none
+    width: max-content
+    td
+      border: none
+      padding: 0
+
+    tr:nth-child(even)
+      background-color: transparent
+
+    tr:hover
+      background-color: transparent
