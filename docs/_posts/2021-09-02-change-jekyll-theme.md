@@ -7,9 +7,16 @@ description: Já pensou em como customizar seu site no jekyll? Nesse post vamos 
 tags: jekyll
 author: Thiago B. Mattos
 tags-icon: far fa-gem
+<<<<<<< HEAD
 ---
 
 O jekyll é um gerador de sites estáticos. Mas o que isso significa? Uma página estática é um site da Internet que exibe o mesmo conteúdo para todos os usuários, em vez de fornecer conteúdos personalizados para cada usuário. Sites estáticos têm como vantagens a velocidade de carregamento e o baixo custo de desenvolvimento, e, por isso, houve um crescimento no mercado de geradores de sites estáticos. Os geradores de sites estáticos nos permitem trabalhar como se estivéssemos criando páginas dinâmicas, ou seja, podemos criar pedaços de HTML que ficarão em arquivos separados. A diferença é que, ao invés de gerar uma página quando o usuário requisitar, os geradores já geram todos os arquivos HTML. Assim, quando alguém requisitar uma página, ela já estará pronta para ser entregue. Alguns geradores de sites estáticos famosos são o [Wix](https://pt.wix.com/), [WordPress](https://wordpress.com/pt-br/), [Nuxt.js](https://nuxtjs.org), etc. Mas dentre tantos, um que se destaca por por ser open-source e dar a maior liberdade pro usuário constuir e personalizar seu site é o [Jekyll](https://jekyllrb.com). E nesse post vou ensinar como customizar o tema padrão do Jekyll para que você possa utilizar o jekyll ao seu máximo.
+=======
+image: 2021-09-02-change-jekyll-theme.webp
+---
+
+O jekyll é um gerador de sites estáticos. Mas o que isso significa? Uma página estática é um site da Internet que exibe o mesmo conteúdo para todos os usuários, em vez de fornecer conteúdos personalizados para cada usuário. Sites estáticos têm como vantagens a velocidade de carregamento e o baixo custo de desenvolvimento, e, por isso, houve um crescimento no mercado de geradores de sites estáticos. Os geradores de sites estáticos nos permitem trabalhar como se estivéssemos criando páginas dinâmicas, ou seja, podemos criar pedaços de HTML que ficarão em arquivos separados. A diferença é que, ao invés de gerar uma página quando o usuário requisitar, os geradores já geram todos os arquivos HTML. Assim, quando alguém requisitar uma página, ela já estará pronta para ser entregue. Alguns geradores de sites estáticos famosos são o [Wix](https://pt.wix.com/), [WordPress](https://wordpress.com/pt-br/), [Nuxt.js](https://nuxtjs.org), etc. Mas dentre tantos, um que se destaca por por ser open-source e dar a maior liberdade pro usuário constuir e personalizar seu site é o [Jekyll](https://jekyllrb.com). **E nesse post vou ensinar como customizar o tema padrão do Jekyll** para que você possa utilizar o jekyll ao seu máximo.
+>>>>>>> 09660238c733f4d0ca7f1d3744f16c785e325c6f
 
 Tabela de Conteudo
 =================
@@ -17,6 +24,7 @@ Tabela de Conteudo
   * [Jekyll](#jekyll)
   * [EstruturaJekyll](#estrutura-jekyll)
   * [Assets](#assets)
+<<<<<<< HEAD
   * [_Sass](#sass)
   * [_Include](#include)
   * [_Layouts](#layouts)
@@ -24,6 +32,15 @@ Tabela de Conteudo
 ## Jekyll 
 
 O Jekyll é uma [biblioteca](https://rubygems.org/gems/jekyll) em ruby que permite a criação de websites e blogs. Sites em Jekyll são programados usando as tecnologias Markdown, [Liquid](https://shopify.github.io/liquid/)(Linguagem de template escrita em Ruby), Html, Css e JavaScript, que, ao serem compilados, são transformados em sites estáticos. Uma das grandes vantagens do Jekyll é o suporte do [GitHub Pages](https://pages.github.com) em que pode-se hospedar o site criado gratuitamente.
+=======
+  * [_Sass](#_sass)
+  * [_Include](#_include)
+  * [_Layouts](#_layouts)
+
+## Jekyll 
+
+O Jekyll é uma [biblioteca](https://rubygems.org/gems/jekyll) em ruby que permite a criação de websites e blogs. Sites em Jekyll são programados usando as tecnologias Markdown, [Liquid](https://shopify.github.io/liquid/) (Linguagem de template escrita em Ruby), Html, Css e JavaScript, que, ao serem compilados, são transformados em sites estáticos. Uma das grandes vantagens do Jekyll é o suporte do [GitHub Pages](https://pages.github.com) em que pode-se hospedar o site criado gratuitamente.
+>>>>>>> 09660238c733f4d0ca7f1d3744f16c785e325c6f
 
 ##  Estrutura Jekyll
 
@@ -42,7 +59,11 @@ Um novo projeto no Jekyll tem esta estrutura:
 └── index.markdown
 {% endhighlight %}
 
-O primeiro passo para se customizar o tema do site é incluir os diretórios `_include`, `_layouts`, `_sass`, `assets` na root do projeto para customizar o site. Mesmo que os diretórios tenham sido criados, como não há arquivo nenhum dentro deles, o jekyll continuará a renderizar o conteúdo do Minima. Para criar o nosso tema, teremos então que adicionar nossas mudanças nos diretórios correspondentes. Após criar estes diretórios, a estrutura do projeto ficará assim: 
+<<<<<<< HEAD
+**O primeiro passo para se customizar o tema do site é incluir os diretórios `_include`, `_layouts`, `_sass`, `assets` na root do projeto para customizar o site**. Mesmo que os diretórios tenham sido criados, como não há arquivo nenhum dentro deles, o jekyll continuará a renderizar o conteúdo do Minima. Para criar o nosso tema, teremos então que adicionar nossas mudanças nos diretórios correspondentes. Após criar estes diretórios, a estrutura do projeto ficará assim: 
+=======
+**O primeiro passo para se customizar o tema do site é incluir os diretórios `_include`, `_layouts`, `_sass`, `assets` na root do projeto para customizar o site**. Mesmo que os diretórios tenham sido criados, como não há arquivo nenhum dentro deles, o jekyll continuará a renderizar o conteúdo do Minima. Para criar o nosso tema, teremos então que adicionar nossas mudanças nos diretórios correspondentes. Após criar estes diretórios, a estrutura do projeto ficará assim: 
+>>>>>>> 09660238c733f4d0ca7f1d3744f16c785e325c6f
 
 {% highlight bash linenos %}
 .
@@ -62,8 +83,13 @@ O primeiro passo para se customizar o tema do site é incluir os diretórios `_i
 ## assets
 
 O diretório assets serve para guardar qualquer arquivo que seja útil para o site, como imagens, arquivos svg, pdfs, dentre muitos outros. Este diretório também armazena o arquivo css que o jekyll irá usar para buildar o site.
+<<<<<<< HEAD
 Após criarmos o diretório `assets`, iremos criar um outro diretório dentro dele, chamado `css`, será aqui que irá ficar o arquivo sass principal que será convertido para css.
 Assim, devemos criar o arquivo `main.sass`. Esse arquivo vai somente importar o `main.sass` do diretório `_sass`. Poderíamos, por exemplo, criar todos os estilos usados no site dentro deste arquivo sass, mas, para deixar-mos mais organizado, iremos apenas importar o `main.sass` do diretório `_sass` neste arquivo. E então, o arquivo main dentro de assets/css fica da seguinte forma:
+=======
+**Após criarmos o diretório `assets`, iremos criar um outro diretório dentro dele, chamado `css`**, será aqui que irá ficar o arquivo sass principal que será convertido para css.
+**Assim, devemos criar o arquivo `main.sass`.** Esse arquivo vai somente importar o `main.sass` do diretório `_sass`. Poderíamos, por exemplo, criar todos os estilos usados no site dentro deste arquivo sass, mas, para deixar-mos mais organizado, iremos apenas importar o `main.sass` do diretório `_sass` neste arquivo. E então, o arquivo main dentro de assets/css fica da seguinte forma:
+>>>>>>> 09660238c733f4d0ca7f1d3744f16c785e325c6f
 
 {% highlight liquid linenos%}
 {% raw %}
@@ -76,7 +102,11 @@ Assim, devemos criar o arquivo `main.sass`. Esse arquivo vai somente importar o 
 
 ## _sass
 
+<<<<<<< HEAD
 Sass (em inglês, "syntactically awesome stylesheets", ou "folhas de estilo sintaticamente incríveis") é uma linguagem de folhas de estilo. Sass é uma linguagem de script que é interpretada ou compilada em Cascading Style Sheets (CSS). O jekyll tem suporte nativo ao Sass, e, para usarmos, basta criar um arquivo com o nome `main.sass` dentro do diretório `_sass`. Por motivos de organização, iremos criar um arquivo .sass para cada componente que iremos fazer, assim como também podemos criar para cada view que quisermos, e, para cada novo arquivo sass que criarmos, devemos importa-lo no `main.sass` para que ele possa ser enviado para o `main.sass` do diretório `assets` e consequentemente, renderizado no site. Além do `main.sass`, ainda criaremos o arquivo `_variables.sass` que irá armazenar as variáveis que iremos usar para padronizar o projeto, e para usar estas variáveis, basta dar um `import` dentro do arquivo sass que desejar usar e usar a sintaxe `$nome-da-variavel` quando quiser usar algum valor dentro de `_variables.sass`. No nosso projeto, usaremos as seguintes variaveis:
+=======
+Sass (em inglês, "syntactically awesome stylesheets", ou "folhas de estilo sintaticamente incríveis") é uma linguagem de folhas de estilo. Sass é uma linguagem de script que é interpretada ou compilada em Cascading Style Sheets (CSS). **O jekyll tem suporte nativo ao Sass, e, para usarmos, basta criar um arquivo com o nome `main.sass` dentro do diretório `_sass`**. Por motivos de organização, iremos criar um arquivo .sass para cada componente que iremos fazer, assim como também podemos criar para cada view que quisermos, e, para cada novo arquivo sass que criarmos, devemos importa-lo no `main.sass` para que ele possa ser enviado para o `main.sass` do diretório `assets` e consequentemente, renderizado no site. Além do `main.sass`, ainda criaremos o arquivo `_variables.sass` que irá armazenar as variáveis que iremos usar para padronizar o projeto, e para usar estas variáveis, basta dar um `import` dentro do arquivo sass que desejar usar e usar a sintaxe `$nome-da-variavel` quando quiser usar algum valor dentro de `_variables.sass`. No nosso projeto, usaremos as seguintes variaveis:
+>>>>>>> 09660238c733f4d0ca7f1d3744f16c785e325c6f
 
 {% highlight sass linenos %}
 {% raw %}
@@ -89,7 +119,11 @@ $contrast-color: #04AA6D
 
 ## _include
 
+<<<<<<< HEAD
 O include é uma forma de colocar o mesmo elemento várias vezes em uma mesma página ou em páginas diferentes sem ter que repetir o código fonte, deixando assim o html mais limpo e legível. Como os includes são uma cópia do código fonte original, basta modificar o código fonte que as mudanças serão refletidas em todas as instâncias daquele elemento. Portanto, criaremos dentro do diretório _includes(que acabamos de criar), o arquivo `head.html` com as informações básicas do site:
+=======
+**O include é uma forma de colocar o mesmo elemento várias vezes em uma mesma página** ou em páginas diferentes sem ter que repetir o código fonte, deixando assim o html mais limpo e legível. **Como os includes são uma cópia do código fonte original, basta modificar o código fonte que as mudanças serão refletidas em todas as instâncias daquele elemento. Portanto, criaremos dentro do diretório _includes(que acabamos de criar), o arquivo `head.html`** com as informações básicas do site:
+>>>>>>> 09660238c733f4d0ca7f1d3744f16c785e325c6f
 
 {% highlight html linenos %}
 {% raw %}
@@ -210,9 +244,15 @@ Para incluir um elemento a alguma página, basta usar o comando {%raw%}`{% inclu
 
 ## _layouts
 
+<<<<<<< HEAD
 Layouts são modelos que envolvem seu conteúdo. Eles permitem que você crie um esqueleto de página que você possa usar várias vezes só mudando algumas informações, como o conteúdo que vai ser exibido, o titulo da página, dentre outras. 
 
 Para se criar um layout, a primeira etapa é colocar o código-fonte do modelo em um arquivo `.html` que desejar, neste caso, usaremos o default.html.
+=======
+**Layouts são modelos que envolvem seu conteúdo**. Eles permitem que você crie um esqueleto de página que você possa usar várias vezes só mudando algumas informações, como o conteúdo que vai ser exibido, o titulo da página, dentre outras. 
+
+**Para se criar um layout, a primeira etapa é colocar o código-fonte do modelo em um arquivo `.html`** que desejar, neste caso, usaremos o default.html.
+>>>>>>> 09660238c733f4d0ca7f1d3744f16c785e325c6f
 
 {% highlight html linenos%}
 {% raw %}
@@ -249,4 +289,8 @@ title: Home
 {% endraw %}
 {% endhighlight %}
 
+<<<<<<< HEAD
 E, com isso, pudemos criar um site estático feito em jekyll com tema customizável. Você pode encontrar o repositório com esse projeto [aqui]() para poder baixar e usar como quiser.
+=======
+E, com isso, pudemos criar um site estático feito em jekyll com tema customizável. Você pode encontrar o repositório com esse projeto [aqui]() para poder baixar e usar como quiser.
+>>>>>>> 09660238c733f4d0ca7f1d3744f16c785e325c6f
