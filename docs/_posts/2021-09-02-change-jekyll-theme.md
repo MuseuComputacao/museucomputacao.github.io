@@ -42,7 +42,22 @@ Um novo projeto no Jekyll tem esta estrutura:
 └── index.markdown
 {% endhighlight %}
 
-O primeiro passo para se customizar o tema do site é incluir os diretórios `_include`, `_layouts`, `_sass`, `assets` na root do projeto para customizar o site. Mesmo que os diretórios tenham sido criados, como não há arquivo nenhum dentro deles, o jekyll continuará a renderizar o conteúdo do Minima. Para criar o nosso tema, teremos então que adicionar nossas mudanças nos diretórios correspondentes.
+O primeiro passo para se customizar o tema do site é incluir os diretórios `_include`, `_layouts`, `_sass`, `assets` na root do projeto para customizar o site. Mesmo que os diretórios tenham sido criados, como não há arquivo nenhum dentro deles, o jekyll continuará a renderizar o conteúdo do Minima. Para criar o nosso tema, teremos então que adicionar nossas mudanças nos diretórios correspondentes. Após criar estes diretórios, a estrutura do projeto ficará assim: 
+
+{% highlight bash linenos %}
+.
+├── Gemfile
+├── Gemfile.lock
+├── _config.yml
+├── _data
+├── _includes
+├── _layouts
+├── _posts
+│   └── 2016-12-04-welcome-to-jekyll.markdown
+├── _sass
+├── about.markdown
+└── index.markdown
+{% endhighlight %}
 
 ## assets
 
