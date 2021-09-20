@@ -7,6 +7,7 @@ description: Já pensou em como customizar seu site no jekyll? Nesse post vamos 
 tags: jekyll
 author: Thiago B. Mattos
 tags-icon: far fa-gem
+image: 2021-09-02-change-jekyll-theme.webp
 ---
 
 O jekyll é um gerador de sites estáticos. Mas o que isso significa? Uma página estática é um site da Internet que exibe o mesmo conteúdo para todos os usuários, em vez de fornecer conteúdos personalizados para cada usuário. Sites estáticos têm como vantagens a velocidade de carregamento e o baixo custo de desenvolvimento, e, por isso, houve um crescimento no mercado de geradores de sites estáticos. Os geradores de sites estáticos nos permitem trabalhar como se estivéssemos criando páginas dinâmicas, ou seja, podemos criar pedaços de HTML que ficarão em arquivos separados. A diferença é que, ao invés de gerar uma página quando o usuário requisitar, os geradores já geram todos os arquivos HTML. Assim, quando alguém requisitar uma página, ela já estará pronta para ser entregue. Alguns geradores de sites estáticos famosos são o [Wix](https://pt.wix.com/), [WordPress](https://wordpress.com/pt-br/), [Nuxt.js](https://nuxtjs.org), etc. Mas dentre tantos, um que se destaca por por ser open-source e dar a maior liberdade pro usuário constuir e personalizar seu site é o [Jekyll](https://jekyllrb.com). **E nesse post vou ensinar como customizar o tema padrão do Jekyll** para que você possa utilizar o jekyll ao seu máximo.
