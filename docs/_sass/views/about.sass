@@ -3,13 +3,12 @@
 
 .collaborators 
   @include display-row
-  justify-content: space-between
   flex-flow: row wrap
   @include tablets-and-down
     justify-content: center
   
   &__card
-    max-width: 200px
+    width: 225px
     text-align: center
     line-height: 20px
     margin-top: 20px
@@ -44,6 +43,7 @@
 
       &:hover
         color: $primary-color
+
 .partners
   @include display-row
   flex-flow: row wrap
