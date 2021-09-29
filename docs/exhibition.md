@@ -4,3 +4,4 @@ permalink: /exhibition/
 title: Marco Zero
 ---
 
+{% include timelinecard.html %}
