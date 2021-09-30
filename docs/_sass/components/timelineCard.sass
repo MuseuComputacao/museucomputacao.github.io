@@ -1,28 +1,46 @@
+@import "_variables"
+
+.timelineContainer
+  width: 100%
+  display: flex
+  flex-flow: row wrap
+  &__card
+    margin: 20px
+    width: 45%
+    height: 300px
+    background-color: $bg-color
+    &:nth-child(even)
+      margin-top: 150px
+
+.timeline
+  position: absolute
+  top: 0
+  margin-top: 150px
+  left: 49.5%
+  z-index: 10
+  height: 100vh
+  width: 5px
+  background-color: $primary-color
+  border-radius: 2.5px
+
+
 /* Media Queries */
 
 @mixin mq-xs 
   @media (min-width: 320px) 
     @content
-  
-
 
 @mixin mq-sm 
   @media (min-width: 480px) 
     @content
-  
-
 
 @mixin mq-md 
   @media (min-width: 720px) 
     @content
-  
-
 
 @mixin mq-lg 
   @media (min-width: 1000px) 
     @content
-  
-
 
 $background: #f7f7f7
 $box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07)
@@ -33,7 +51,7 @@ $rows: ceil($items/2)
 /* Card sizing */
 
 $card-height: 400px
-$card-width: 450px
+$card-width: 400px
 $inner-margin: 15px
 $number-size: 35px
 $stagger: 180px
@@ -43,13 +61,11 @@ $marker-size: 9px
 /* Colors */
 
 $steps: #46b8e9
-$colors: #46b8e9,#3ee9d1,#ce43eb,#4d92eb
 $timeline: #bdbdbd
 
 /* Calculations */
 
 $container-height: $rows * ($card-height + $outer-margin) + $stagger
-$container-width: $card-width*2 + $outer-margin*3
 $head-height: $number-size + 50
 $body-height: $card-height - $head-height
 $marker-dist: $card-width + $outer-margin/2 - $marker-size/2
@@ -64,6 +80,7 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2
     height: 0
     border-top: 15px solid transparent
     border-bottom: 15px solid transparent
+    color: $primary-color
   
   %marker 
     position: absolute
@@ -73,48 +90,28 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2
     background-color: $timeline
     border-radius: $marker-size
     box-shadow: 0px 0px 2px 8px $background
-  
-
-
-
-/* Some Cool Stuff */
-
-$counter: $items - $rows + 2
-@for $i from 1 through $rows 
-  .demo-card:nth-child(#$i*2-1)    order: $i 
-  .demo-card:nth-child(#$i*2)      order: $counter 
-  $counter: $counter + 1
-
 
 /* Border Box */
 
 * 
   box-sizing: border-box
 
+/* Some Cool Stuff */
+
+$counter: $items - $rows + 2
+@for $i from 1 through $rows 
+  .demo-card:nth-child(#{$i*2-1})   
+      order: $i 
+  .demo-card:nth-child(#{$i*2})     
+      order: $counter
+  $counter: $counter + 1
 
 /* Fonts */
 
 body 
   font-family: Roboto
 
-
-#timeline 
-  padding: 100px 0
-  background: $background
-  border-top: $border
-  border-bottom: $border
-  h1 
-    text-align: center
-    font-size: 3rem
-    font-weight: 200
-    margin-bottom: 20px
-  
-  p.leader 
-    text-align: center
-    max-width: 90%
-    margin: auto
-    margin-bottom: 45px
-  
+#timeline  
   .demo-card-wrapper 
     position: relative
     margin: auto
@@ -135,8 +132,6 @@ body
       border-left: $border
       @include mq-lg 
         border-left: 1px solid $timeline
-      
-    
   
   .demo-card 
     position: relative
@@ -144,6 +139,7 @@ body
     margin: 10px auto 80px
     max-width: 94%
     z-index: 2
+    background-color: $primary-color
     @include mq-sm 
       max-width: 60%
       box-shadow: $box-shadow
@@ -154,7 +150,6 @@ body
     @include mq-lg 
       max-width: $card-width
       height: $card-height
-      margin: $outer-margin
       margin-top: $outer-margin/2
       margin-bottom: $outer-margin/2
       &:nth-child(odd) 
@@ -168,7 +163,6 @@ body
         .head::before 
           @extend %marker
           left: $marker-dist + 1
-        
       
       &:nth-child(even) 
         margin-left: $outer-margin/2
@@ -185,7 +179,6 @@ body
       
       &:nth-child(2) 
         margin-top: $stagger
-      
     
     .head 
       position: relative
@@ -221,9 +214,6 @@ body
           margin: 0
           @include mq-sm 
             font-size: 0.8rem
-          
-        
-      
     
     .body 
       background: #fff
@@ -241,15 +231,3 @@ body
       img 
         display: block
         width: 100%
-      
-    
-    @for $i from 1 through $items 
-      &--step#$i 
-        $color: nth($colors, ((($i - 1) % 4) + 1))
-        background-color: $color
-        .head::after 
-          border-color: $color
-        
-      
-    
-  
