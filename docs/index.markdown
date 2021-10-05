@@ -5,7 +5,7 @@
 layout: home
 banner_autor: Alan Mathison Turing
 banner_quote: Nós só podemos ver um pouco do futuro, mas o suficiente para perceber que há muito a fazer
-banner_url: banner.png
+banner_url: banner.webp
 banner_alt: The first demonstration of the pilot ACE at NPL December 1950
 title: Museu da Computação 
 
