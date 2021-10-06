@@ -32,7 +32,7 @@ $rows: ceil($items/2)
 
 /* Card sizing */
 
-$card-height: 600px
+$card-height: 650px
 $card-width: 400px
 $inner-margin: 15px
 $number-size: 35px
@@ -122,6 +122,8 @@ body
     max-width: 94%
     z-index: 2
     background-color: $primary-color
+    @include tablets-and-down
+      max-width: 100%
     @include mobile-and-up 
       max-width: 60%
       box-shadow: $box-shadow
@@ -213,11 +215,9 @@ body
         margin-bottom: $inner-margin
       
       &-image
-        overflow: hidden
-        height: 200px
-        width: 100%
-        position: relative
         img
+          height: 200px
           width: 100%
           object-fit: cover
           object-position: 50% 50%
+
