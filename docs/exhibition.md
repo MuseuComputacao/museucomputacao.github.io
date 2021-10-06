@@ -1,7 +1,7 @@
 ---
 layout: default
 permalink: /exhibition/
-title: Acervo Fixo
+title: Exposição Permanente 
 ---
 
 O Instituto Tércio Pacitti de Aplicações e Pesquisas Computacionais (NCE/UFRJ), o Instituto de Computação (IC/UFRJ), o Programa de Pós-Graduação em Informática (PPGI/UFRJ) e o Programa de Pós-Graduação em História das Ciências, das Técnicas e Epistemologia (HCTE/UFRJ) criaram o Museu da Computação da UFRJ.
