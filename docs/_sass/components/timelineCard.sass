@@ -32,7 +32,7 @@ $rows: ceil($items/2)
 
 /* Card sizing */
 
-$card-height: 650px
+$card-height: 670px
 $card-width: 400px
 $inner-margin: 15px
 $number-size: 35px
@@ -215,9 +215,10 @@ body
         margin-bottom: $inner-margin
       
       &-image
+        flex-grow: 1
         img
-          height: 200px
+          max-height: 290px
           width: 100%
-          object-fit: cover
-          object-position: 50% 50%
+          object-fit: contain
+          object-position: left bottom
 
