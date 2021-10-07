@@ -2,7 +2,7 @@
 layout: blank
 permalink: /sponsor/
 title: Seja Patrocinador
-form-link:  https://docs.google.com/forms/d/e/1FAIpQLSddOmEqeJz4BS8hiUhohl_kmuVNlXju8tykV3LN8ClPoUUiuQ/viewform?usp=pp_url
+form-link:  https://docs.google.com/forms/d/e/1FAIpQLScSaRwFJB54SzkIatj2rLvMU3_XiLWY_G3L4oRUR6QDzvfHUg/viewform?usp=sf_link
 ---
 
 
