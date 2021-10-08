@@ -1,0 +1,179 @@
+@import "_variables"
+@import "_mixins"
+
+$items: 10
+$rows: ceil($items/2)
+
+/* Card sizing */
+
+$card-height: 680px
+$card-width: 400px
+$inner-margin: 15px
+$number-size: 35px
+$stagger: 180px
+$outer-margin: 90px
+$marker-size: 9px
+
+$container-height: $rows * ($card-height + $outer-margin) + $stagger
+$head-height: $number-size + 50
+$body-height: $card-height - $head-height
+$marker-dist: $card-width + $outer-margin/2 - $marker-size/2
+
+@include desktop-and-up 
+  %arrow 
+    position: absolute
+    content: ""
+    width: 0
+    height: 0
+    border-top: 15px solid transparent
+    border-bottom: 15px solid transparent
+    color: $primary-color
+  
+  %marker 
+    position: absolute
+    content: ""
+    width: $marker-size
+    height: $marker-size
+    background-color: #bdbdbd
+    border-radius: $marker-size
+    box-shadow: 0px 0px 2px 8px #f7f7f7
+
+/* muda direção do card */
+
+$counter: $items - $rows + 2
+@for $i from 1 through $rows 
+  .timeline-card:nth-child(#{$i*2-1})   
+      order: $i 
+  .timeline-card:nth-child(#{$i*2})     
+      order: $counter
+  $counter: $counter + 1
+
+* 
+  box-sizing: border-box
+
+.timeline  
+  &-card-wrapper 
+    position: relative
+    margin: auto
+    @include desktop-and-up 
+      display: flex
+      flex-flow: column wrap
+      width: $container-width
+      height: $container-height
+      margin: 0 auto
+    
+    &::after 
+      z-index: 1
+      content: ""
+      position: absolute
+      top: 0
+      bottom: 0
+      left: 50%
+      border-left: 1px solid rgba(191, 191, 191, 0.4)
+      @include desktop-and-up 
+        border-left: 1px solid #bdbdbd
+  
+  &-card 
+    position: relative
+    display: block
+    margin: 10px auto 80px
+    max-width: 94%
+    z-index: 2
+    background-color: $primary-color
+    @include mobile-and-up 
+      max-width: 60%
+      box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07)
+    
+    @include desktop-and-up 
+      max-width: $card-width
+      height: $card-height
+      margin-top: $outer-margin/2
+      margin-bottom: $outer-margin/2
+      &:nth-child(odd) 
+        margin-right: $outer-margin/2
+        .timeline-card-head::after 
+          @extend %arrow
+          border-left-width: 15px
+          border-left-style: solid
+          left: 100%
+        
+        .timeline-card-head::before 
+          @extend %marker
+          left: $marker-dist + 1
+      
+      &:nth-child(even) 
+        margin-left: $outer-margin/2
+        .timeline-card-head::after 
+          @extend %arrow
+          border-right-width: 15px
+          border-right-style: solid
+          right: 100%
+        
+        .timeline-card-head::before 
+          @extend %marker
+          right: $marker-dist - 1
+        
+      &:nth-child(2) 
+        margin-top: $stagger
+    
+    &-head 
+      position: relative
+      display: flex
+      align-items: center
+      color: #fff
+      font-weight: 400
+      &--number-box 
+        display: inline
+        float: left
+        margin: $inner-margin
+        padding: 10px
+        font-size: $number-size
+        line-height: $number-size
+        font-weight: 600
+        background: rgba(0, 0, 0, 0.17)
+      
+      &--title
+        @include display-col
+        &-big 
+          width: 90%
+          text-transform: uppercase
+          font-weight: inherit
+          letter-spacing: 2px
+          margin: 0
+          padding-bottom: 6px
+          font-size: 1.5rem
+          line-height: 1.3rem
+
+          @include  tablets-and-down
+            letter-spacing: 1px
+            font-size: 1.3rem
+            line-height: 1.2rem
+          @include mobile-and-down 
+            letter-spacing: 1px
+            font-size: 1.1rem
+            line-height: 1rem
+          
+        &-small 
+          display: block
+          font-size: 1rem
+          font-weight: inherit
+          margin: 0
+          @include mobile-and-down
+            font-size: 0.8rem
+    
+    &-body 
+      @include display-col
+      justify-content: space-between
+      background: $text-color
+      border: 1px solid rgba(191, 191, 191, 0.4)
+      border-top: 0
+      padding: $inner-margin
+      @include desktop-and-up 
+        height: $body-height
+      
+      &--image
+        img
+          max-height: 290px
+          width: 100%
+          object-fit: contain
+          object-position: center center

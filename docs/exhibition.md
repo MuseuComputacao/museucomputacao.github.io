@@ -13,3 +13,6 @@ O objetivo do Museu é salvaguardar e difundir a história da pesquisa e da cons
  
 
 As peças do acervo do Museu da Computação são, em sua maioria, desenvolvimentos do NCE/UFRJ (antigo Núcleo de Computação Eletrônica). Mas há também objetos doados que contam a história do ensino & pesquisa na Universidade.
+
+
+{% include timelineCard.html %}
