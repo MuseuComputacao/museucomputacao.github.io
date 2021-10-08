@@ -10,6 +10,20 @@
     <h1 class="base-title">
       {{ page.title }}
     </h1>
+
+    <div class="post__author"> 
+      <span>
+        <i> Escrito por  </i><strong>{{ page.author.name }} </strong>
+      </span> 
+      <span>
+        <i> Em </i> <strong> {{ page.date | date: "%d / %m / %Y" }}</strong>
+      </span>
+      {% if page.author.contact %}
+        <a href="{{ page.author.contact_link }}" target="_blank">
+          @{{ page.author.contact }}
+        </a>
+      {%endif%}
+    </div>
     
     {{ content }}
 

@@ -49,7 +49,7 @@
       "avatar": "serafim-brandao.jpeg"
     },
     {
-      "name": "Marco Antonio Silva Cabral",
+      "name": "Marco Antonio Cabral",
       "twitter": null,
       "github": null,
       "role": "Aluno de Extensão",
@@ -82,6 +82,28 @@
       "github": null,
       "role": "Orientadora",
       "avatar": "valeria-bastos.jpeg"
+    },
+    {
+      "name": "Juliana Vianna Gatts",
+      "twitter": null,
+      "github": null,
+      "instagram": "gatts.design",
+      "role": "Design de Interiores",
+      "avatar": "juliana-vianna-gatts.jpeg"
+    },
+    {
+      "name": "Gustavo William",
+      "twitter": null,
+      "github": null,
+      "role": "Design de Interiores",
+      "avatar": "gustavo-william.jpeg"
+    },
+    {
+      "name": "Cleide Martin",
+      "twitter": null,
+      "github": null,
+      "role": "Orientadora",
+      "avatar": "cleide-martins.jpeg"
     }
   ],
   "partners": [

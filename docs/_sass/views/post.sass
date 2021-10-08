@@ -25,7 +25,7 @@
   p 
     font-size: 18px
     text-indent: 50px
-
+  
 
   a
     color: $primary-color
@@ -54,6 +54,10 @@
   p 
     img 
       max-width: 100%
+
+  &__author 
+    @include display-col
+    font-size: 14px
 
   &__article
     width: 80%
@@ -144,3 +148,7 @@ table
 
   tr:hover
     background-color: #ddd
+
+
+.post p img 
+  text-indent: 0

@@ -5,7 +5,10 @@ date:   2021-09-07 10:00:00 -0300
 categories: jekyll
 description: Já pensou em como lidar com dados no jekyll? Nesse post vamos discutir alguns formatos de dados e seu fluxo de uso.
 tags: jekyll
-author: Fábio R. Nóbrega
+author: 
+  name: Fábio R. Nóbrega
+  contact: FabioRNobrega
+  conttact_link: https://twitter.com/FabioRNobrega
 tags-icon: far fa-gem
 image: "2021-09-07-data-with-jekyll.jpeg"
 ---

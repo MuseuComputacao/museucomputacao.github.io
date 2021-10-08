@@ -5,7 +5,10 @@ date:   2021-09-02 10:00:00 -0300
 categories: jekyll
 description: Já pensou em como customizar seu site no jekyll? Nesse post vamos discutir como modificar o tema padrão do jekyll
 tags: jekyll
-author: Thiago B. Mattos
+author: 
+  name: Thiago B. Mattos
+  contact: ThBMattos
+  contact_link: https://twitter.com/ThBMattos
 tags-icon: far fa-gem
 image: 2021-09-02-change-jekyll-theme.webp
 ---

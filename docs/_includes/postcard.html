@@ -10,7 +10,7 @@
         <h1 class="postcard__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
         <div class="postcard__subtitle small">
             <time datetime="2020-05-25">
-                <i class="fas fa-calendar-alt mr"></i>{{ post.date | date_to_string }} por {{ post.author}}
+                <i class="fas fa-calendar-alt mr"></i>{{ post.date | date_to_string }} por {{ post.author.name}}
             </time>
         </div>
         <div class="postcard__bar"></div>

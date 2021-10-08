@@ -31,13 +31,18 @@
                 {{ collaborator.role}}
               </div>
               {% if collaborator.twitter %}
-                <a href="https://twitter.com/{{ collaborator.twitter }}">                
-                  <i class="fab fa-twitter"></i> {{ collaborator.twitter }}
+                <a href="https://twitter.com/{{ collaborator.twitter }}" target="_blank">                
+                  <i class="fab fa-twitter"></i> @{{ collaborator.twitter }}
                 </a>
               {% endif %}
               {% if collaborator.github %}
-                <a href="https://github.com/{{ collaborator.github }}">
-                  <i class="fab fa-github"></i> {{ collaborator.github}}
+                <a href="https://github.com/{{ collaborator.github }}" target="_blank">
+                  <i class="fab fa-github"></i> @{{ collaborator.github}}
+                </a>
+              {% endif %}
+              {% if collaborator.instagram %}
+                <a href="https://www.instagram.com/{{ collaborator.instagram }}" target="_blank">
+                  <i class="fab fa-instagram"></i> @{{ collaborator.instagram}}
                 </a>
               {% endif %}
            </div>
