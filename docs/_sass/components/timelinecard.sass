@@ -1,38 +1,12 @@
 @import "_variables"
 @import "_mixins"
 
-.timelineContainer
-  width: 100%
-  display: flex
-  flex-flow: row wrap
-  &__card
-    margin: 20px
-    width: 45%
-    height: 300px
-    background-color: $bg-color
-    &:nth-child(even)
-      margin-top: 150px
-
-.timeline
-  position: absolute
-  top: 0
-  margin-top: 150px
-  left: 49.5%
-  z-index: 10
-  height: 100vh
-  width: 5px
-  background-color: $primary-color
-  border-radius: 2.5px
-
-$background: #f7f7f7
-$box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07)
-$border: 1px solid rgba(191, 191, 191, 0.4)
 $items: 10
 $rows: ceil($items/2)
 
 /* Card sizing */
 
-$card-height: 650px
+$card-height: 680px
 $card-width: 400px
 $inner-margin: 15px
 $number-size: 35px
@@ -40,19 +14,10 @@ $stagger: 180px
 $outer-margin: 90px
 $marker-size: 9px
 
-/* Colors */
-
-$steps: #46b8e9
-$timeline: #bdbdbd
-
-/* Calculations */
-
 $container-height: $rows * ($card-height + $outer-margin) + $stagger
 $head-height: $number-size + 50
 $body-height: $card-height - $head-height
 $marker-dist: $card-width + $outer-margin/2 - $marker-size/2
-
-/* Placeholders */
 
 @include desktop-and-up 
   %arrow 
@@ -69,32 +34,25 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2
     content: ""
     width: $marker-size
     height: $marker-size
-    background-color: $timeline
+    background-color: #bdbdbd
     border-radius: $marker-size
-    box-shadow: 0px 0px 2px 8px $background
+    box-shadow: 0px 0px 2px 8px #f7f7f7
 
-/* Border Box */
+/* muda direção do card */
+
+$counter: $items - $rows + 2
+@for $i from 1 through $rows 
+  .timeline-card:nth-child(#{$i*2-1})   
+      order: $i 
+  .timeline-card:nth-child(#{$i*2})     
+      order: $counter
+  $counter: $counter + 1
 
 * 
   box-sizing: border-box
 
-/* Some Cool Stuff */
-
-$counter: $items - $rows + 2
-@for $i from 1 through $rows 
-  .demo-card:nth-child(#{$i*2-1})   
-      order: $i 
-  .demo-card:nth-child(#{$i*2})     
-      order: $counter
-  $counter: $counter + 1
-
-/* Fonts */
-
-body 
-  font-family: Roboto
-
-#timeline  
-  .demo-card-wrapper 
+.timeline  
+  &-card-wrapper 
     position: relative
     margin: auto
     @include desktop-and-up 
@@ -111,25 +69,20 @@ body
       top: 0
       bottom: 0
       left: 50%
-      border-left: $border
+      border-left: 1px solid rgba(191, 191, 191, 0.4)
       @include desktop-and-up 
-        border-left: 1px solid $timeline
+        border-left: 1px solid #bdbdbd
   
-  .demo-card 
+  &-card 
     position: relative
     display: block
     margin: 10px auto 80px
     max-width: 94%
     z-index: 2
     background-color: $primary-color
-    @include tablets-and-down
-      max-width: 100%
     @include mobile-and-up 
       max-width: 60%
-      box-shadow: $box-shadow
-    
-    @include tablets-and-up
-      max-width: 40%
+      box-shadow: 0px 1px 22px 4px rgba(0, 0, 0, 0.07)
     
     @include desktop-and-up 
       max-width: $card-width
@@ -138,39 +91,38 @@ body
       margin-bottom: $outer-margin/2
       &:nth-child(odd) 
         margin-right: $outer-margin/2
-        .head::after 
+        .timeline-card-head::after 
           @extend %arrow
           border-left-width: 15px
           border-left-style: solid
           left: 100%
         
-        .head::before 
+        .timeline-card-head::before 
           @extend %marker
           left: $marker-dist + 1
       
       &:nth-child(even) 
         margin-left: $outer-margin/2
-        .head::after 
+        .timeline-card-head::after 
           @extend %arrow
           border-right-width: 15px
           border-right-style: solid
           right: 100%
         
-        .head::before 
+        .timeline-card-head::before 
           @extend %marker
           right: $marker-dist - 1
         
-      
       &:nth-child(2) 
         margin-top: $stagger
     
-    .head 
+    &-head 
       position: relative
       display: flex
       align-items: center
       color: #fff
       font-weight: 400
-      .number-box 
+      &--number-box 
         display: inline
         float: left
         margin: $inner-margin
@@ -180,44 +132,48 @@ body
         font-weight: 600
         background: rgba(0, 0, 0, 0.17)
       
-      h2 
-        text-transform: uppercase
-        font-size: 1.3rem
-        font-weight: inherit
-        letter-spacing: 2px
-        margin: 0
-        padding-bottom: 6px
-        line-height: 1rem
-        @include mobile-and-up 
-          font-size: 165%
-          line-height: 1.5rem
-        
-        span 
-          display: block
-          font-size: 0.6rem
+      &--title
+        @include display-col
+        &-big 
+          width: 90%
+          text-transform: uppercase
+          font-weight: inherit
+          letter-spacing: 2px
           margin: 0
-          @include mobile-and-up 
+          padding-bottom: 6px
+          font-size: 1.5rem
+          line-height: 1.3rem
+
+          @include  tablets-and-down
+            letter-spacing: 1px
+            font-size: 1.3rem
+            line-height: 1.2rem
+          @include mobile-and-down 
+            letter-spacing: 1px
+            font-size: 1.1rem
+            line-height: 1rem
+          
+        &-small 
+          display: block
+          font-size: 1rem
+          font-weight: inherit
+          margin: 0
+          @include mobile-and-down
             font-size: 0.8rem
     
-    .body 
+    &-body 
       @include display-col
       justify-content: space-between
-      background: #fff
-      border: $border
+      background: $text-color
+      border: 1px solid rgba(191, 191, 191, 0.4)
       border-top: 0
       padding: $inner-margin
       @include desktop-and-up 
         height: $body-height
       
-      p 
-        font-size: 14px
-        line-height: 18px
-        margin-bottom: $inner-margin
-      
-      &-image
+      &--image
         img
-          height: 200px
+          max-height: 290px
           width: 100%
-          object-fit: cover
-          object-position: 50% 50%
-
+          object-fit: contain
+          object-position: center center
