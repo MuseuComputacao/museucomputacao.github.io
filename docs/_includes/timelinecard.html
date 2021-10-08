@@ -1,22 +1,22 @@
 <section class=timeline>
-	<div class="timeline-card-wrapper">
+	<div class="timeline__card-wrapper">
 		{% for item in site.data.marcoZeroExhibitionData %}
 		{% if item.status == "enabled" %}
-		<div class="timeline-card timeline-card--step{{ item.id }}">
-			<div class="timeline-card-head">
-				<div class="timeline-card-head--number-box">
+		<div class="timeline__card">
+			<div class="timeline__card-head">
+				<div class="timeline__card-head-numberBox">
 					<span>{{ item.id }}</span>
 				</div>
-				<div class="timeline-card-head--title">
-					<h3 class="timeline-card-head--title-small">Subtitle</h3>
-					<h3 class="timeline-card-head--title-big">{{ item.denomination }}</h3>
+				<div class="timeline__card-head-title">
+					<h3 class="timeline__card-head-subtitle">Subtitle</h3>
+					<h3 class="timeline__card-head-mainTitle">{{ item.denomination }}</h3>
 				</div>
 			</div>
-			<div class="timeline-card-body">
+			<div class="timeline__card-body">
 				<p>{{ item.historic }}</p>
 
 				{% if item.identification_picture %}
-				<div class="timeline-card-body--image">
+				<div class="timeline__card-body-image">
 					<img src="{{item.identification_picture}}" alt="Graphic">
 				</div>
 				{% endif %}
