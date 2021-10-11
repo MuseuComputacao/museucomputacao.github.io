@@ -1,11 +1,27 @@
 @import "../_variables"
 @import "../_mixins"
 
+
+#collaborators
+  padding: 0
+
 .collaborators 
-  @include display-row
-  flex-flow: row wrap
+  @include display-col
   @include tablets-and-down
     justify-content: center
+
+  &__type 
+    @include display-col
+    margin-bottom: 80px
+
+    &--title
+      font-size: 25px
+      width: 100%
+      color: $primary-color
+
+    &--item
+      @include display-row
+      flex-flow: row wrap
   
   &__card
     width: 225px
