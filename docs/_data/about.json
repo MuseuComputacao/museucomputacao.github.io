@@ -76,6 +76,16 @@
           "github": "FabioRNobrega",
           "role":"Software Developer",
           "avatar": "fabio-nobrega.jpeg"
+        },
+        {
+          "name": "Luiz Felipe",
+          "role":"Visão Computacional",
+          "avatar": "luiz-felipe.jpeg"
+        },
+         {
+          "name": "Marcelo Eiras",
+          "role":"Visão Computacional",
+          "avatar": "marcelo-eiras.jpeg"
         }
       ]
     },
