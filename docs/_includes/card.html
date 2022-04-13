@@ -5,12 +5,12 @@
 
 <a href="{{ post.url }}">
     <div class="card">
-        {% if post.image == null %}
-        <img class="card-img-top" src="{{ site.baseurl }}/assets/images/museu-icon.png"
-            alt="{{ site.baseurl }}/assets/images/{{prop.title}}" />
+        {% if post.image %}
+          <img class="card-img-top" src="{{ site.baseurl }}/assets/images/posts/{{ post.image }}" alt="{{prop.title}}" />
+        {% elsif post.image_url %}
+          <img class="card-img-top" src="{{ post.image_url }}" alt="{{prop.title}}" />
         {% else %}
-        <img class="card-img-top" src="{{ site.baseurl }}/assets/images/posts/{{ post.image }}"
-            alt="{{ site.baseurl }}/assets/images/{{prop.title}}" />
+          <img class="card-img-top" src="{{ site.baseurl }}/assets/images/museu-icon.png" alt="{{prop.title}}" />
         {% endif %}
         <div class="card-hide-expand"></div>
         <div class="card-body d-flex flex-column">
