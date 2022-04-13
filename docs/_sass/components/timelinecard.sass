@@ -42,9 +42,9 @@ $marker-dist: $card-width + $outer-margin/2 - $marker-size/2
 
 $counter: $items - $rows + 2
 @for $i from 1 through $rows 
-  .timeline-card:nth-child(#{$i*2-1})   
+  .timeline__card:nth-child(#{$i*2-1})   
       order: $i 
-  .timeline-card:nth-child(#{$i*2})     
+  .timeline__card:nth-child(#{$i*2})     
       order: $counter
   $counter: $counter + 1
 
@@ -52,7 +52,7 @@ $counter: $items - $rows + 2
   box-sizing: border-box
 
 .timeline  
-  &-card-wrapper 
+  &__card-wrapper 
     position: relative
     margin: auto
     @include desktop-and-up 
@@ -73,7 +73,7 @@ $counter: $items - $rows + 2
       @include desktop-and-up 
         border-left: 1px solid #bdbdbd
   
-  &-card 
+  &__card 
     position: relative
     display: block
     margin: 10px auto 80px
@@ -91,25 +91,25 @@ $counter: $items - $rows + 2
       margin-bottom: $outer-margin/2
       &:nth-child(odd) 
         margin-right: $outer-margin/2
-        .timeline-card-head::after 
+        .timeline__card-head::after 
           @extend %arrow
           border-left-width: 15px
           border-left-style: solid
           left: 100%
         
-        .timeline-card-head::before 
+        .timeline__card-head::before 
           @extend %marker
           left: $marker-dist + 1
       
       &:nth-child(even) 
         margin-left: $outer-margin/2
-        .timeline-card-head::after 
+        .timeline__card-head::after 
           @extend %arrow
           border-right-width: 15px
           border-right-style: solid
           right: 100%
         
-        .timeline-card-head::before 
+        .timeline__card-head::before 
           @extend %marker
           right: $marker-dist - 1
         
@@ -122,7 +122,7 @@ $counter: $items - $rows + 2
       align-items: center
       color: #fff
       font-weight: 400
-      &--number-box 
+      &-numberBox 
         display: inline
         float: left
         margin: $inner-margin
@@ -132,34 +132,35 @@ $counter: $items - $rows + 2
         font-weight: 600
         background: rgba(0, 0, 0, 0.17)
       
-      &--title
+      &-title
         @include display-col
-        &-big 
-          width: 90%
-          text-transform: uppercase
-          font-weight: inherit
-          letter-spacing: 2px
-          margin: 0
-          padding-bottom: 6px
-          font-size: 1.5rem
-          line-height: 1.3rem
+        
+      &-mainTitle 
+        width: 90%
+        text-transform: uppercase
+        font-weight: inherit
+        letter-spacing: 2px
+        margin: 0
+        padding-bottom: 6px
+        font-size: 1.5rem
+        line-height: 1.3rem
 
-          @include  tablets-and-down
-            letter-spacing: 1px
-            font-size: 1.3rem
-            line-height: 1.2rem
-          @include mobile-and-down 
-            letter-spacing: 1px
-            font-size: 1.1rem
-            line-height: 1rem
-          
-        &-small 
-          display: block
-          font-size: 1rem
-          font-weight: inherit
-          margin: 0
-          @include mobile-and-down
-            font-size: 0.8rem
+        @include  tablets-and-down
+          letter-spacing: 1px
+          font-size: 1.3rem
+          line-height: 1.2rem
+        @include mobile-and-down 
+          letter-spacing: 1px
+          font-size: 1.1rem
+          line-height: 1rem
+        
+      &-subtitle
+        display: block
+        font-size: 1rem
+        font-weight: inherit
+        margin: 0
+        @include mobile-and-down
+          font-size: 0.8rem
     
     &-body 
       @include display-col
@@ -171,7 +172,7 @@ $counter: $items - $rows + 2
       @include desktop-and-up 
         height: $body-height
       
-      &--image
+      &-image
         img
           max-height: 290px
           width: 100%

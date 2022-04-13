@@ -7,103 +7,129 @@
   },
   "collaborators": [
     {
-      "name": "Thiago Barcellos Mattos",
-      "twitter": "ThBMattos",
-      "github": "ThiagoBarcellos",
-      "role":"Software Developer",
-      "avatar": "thiago-barcellos-mattos.jpeg"
+      "title": "Orientadores",
+      "icon": "fas fa-eye",
+      "itemsList": [
+        {
+          "name": "Marcia de Oliveira Cardoso",
+          "role": "Orientadora",
+          "avatar": "marcia-de-oliveira-cardoso.jpeg"
+        },
+        {
+          "name": "Claudia Lage Rebello da Motta",
+          "role": "Orientadora",
+          "avatar": "claudia-lage-rebello-da-motta.jpeg"
+        },
+        {
+          "name": "Serafim Brandão",
+          "role": "Orientador",
+          "avatar": "serafim-brandao.jpeg"
+        },
+        {
+          "name": "Regina Dantas",
+          "role": "Orientadora",
+          "avatar": "regina-dantas.jpeg"
+        },
+        {
+          "name": "Valéria Bastos",
+          "twitter": null,
+          "github": null,
+          "role": "Orientadora",
+          "avatar": "valeria-bastos.jpeg"
+        },
+        {
+          "name": "Cleide Martin",
+          "twitter": null,
+          "github": null,
+          "role": "Orientadora",
+          "avatar": "cleide-martins.jpeg"
+        }
+      ]
     },
     {
-      "name": "Fábio Rodrigues Nóbrega",
-      "twitter": "FabioRNobrega",
-      "github": "FabioRNobrega",
-      "role":"Software Developer",
-      "avatar": "fabio-nobrega.jpeg"
+      "title": "Editorial",
+      "icon": "fas fa-pencil-alt",
+      "itemsList": [
+        {
+          "name": "Ana Lucia Rodrigues",
+          "twitter": null,
+          "github": null,
+          "role": "Editoria de Conteúdo",
+          "avatar": "ana-lucia-rodrigues.jpeg"
+        }
+      ]
     },
     {
-      "name": "Marcia de Oliveira Cardoso",
-      "twitter": null,
-      "github": null,
-      "role": "Orientadora",
-      "avatar": "marcia-de-oliveira-cardoso.jpeg"
+      "title": "Desenvolvedores",
+      "icon": "fas fa-robot",
+      "itemsList": [
+        {
+          "name": "Thiago Barcellos Mattos",
+          "twitter": "ThBMattos",
+          "github": "ThiagoBarcellos",
+          "role":"Software Developer",
+          "avatar": "thiago-barcellos-mattos.jpeg"
+        },
+        {
+          "name": "Fábio Rodrigues Nóbrega",
+          "twitter": "FabioRNobrega",
+          "github": "FabioRNobrega",
+          "role":"Software Developer",
+          "avatar": "fabio-nobrega.jpeg"
+        },
+        {
+          "name": "Luiz Felipe Ribeiro",
+          "role":"Visão Computacional",
+          "avatar": "luiz-felipe.jpeg"
+        },
+         {
+          "name": "Marcelo Eiras",
+          "role":"Visão Computacional",
+          "avatar": "marcelo-eiras.jpeg"
+        }
+      ]
     },
     {
-      "name": "Ana Lucia Rodrigues",
-      "twitter": null,
-      "github": null,
-      "role": "Editora",
-      "avatar": "ana-lucia-rodrigues.jpeg"
-    },
-    {
-      "name": "Claudia Lage Rebello da Motta",
-      "twitter": null,
-      "github": null,
-      "role": "Orientadora",
-      "avatar": "claudia-lage-rebello-da-motta.jpeg"
-    },
-    {
-      "name": "Serafim Brandão",
-      "twitter": null,
-      "github": null,
-      "role": "Orientador",
-      "avatar": "serafim-brandao.jpeg"
-    },
-    {
-      "name": "Marco Antonio Cabral",
-      "twitter": null,
-      "github": null,
-      "role": "Aluno de Extensão",
-      "avatar": "marco-antonio-silva-cabral.jpeg"
-    },
-    {
-      "name": "Regina Dantas",
-      "twitter": null,
-      "github": null,
-      "role": "Orientador",
-      "avatar": "regina-dantas.jpeg"
-    },
-    {
-      "name": "Beatrice Cabral",
-      "twitter": null,
-      "github": null,
-      "role": "Historiadora",
-      "avatar": "beatrice-cabral.jpeg"
-    },
-    {
-      "name": "Clara De Oliveira",
-      "twitter": null,
-      "github": null,
-      "role": "Museóloga",
-      "avatar": "clara-de-oliveira.jpeg"
-    },
-    {
-      "name": "Valéria Bastos",
-      "twitter": null,
-      "github": null,
-      "role": "Orientadora",
-      "avatar": "valeria-bastos.jpeg"
-    },
-    {
-      "name": "Juliana Vianna Gatts",
-      "twitter": null,
-      "github": null,
-      "instagram": "gatts.design",
-      "role": "Design de Interiores",
-      "avatar": "juliana-vianna-gatts.jpeg"
-    },
-    {
-      "name": "Gustavo William",
-      "twitter": null,
-      "github": null,
-      "role": "Design de Interiores",
-      "avatar": "gustavo-william.jpeg"
-    },
-    {
-      "name": "Cleide Martin",
-      "twitter": null,
-      "github": null,
-      "role": "Orientadora",
-      "avatar": "cleide-martins.jpeg"
+      "title": "Voluntários",
+      "icon": "fas fa-hands-helping",
+      "itemsList": [
+        {
+          "name": "Marco Antonio Cabral",
+          "twitter": null,
+          "github": null,
+          "role": "Aluno de Extensão",
+          "avatar": "marco-antonio-silva-cabral.jpeg"
+        },
+        {
+          "name": "Beatrice Cabral",
+          "twitter": null,
+          "github": null,
+          "role": "Historiadora",
+          "avatar": "beatrice-cabral.jpeg"
+        },
+        {
+          "name": "Clara De Oliveira",
+          "twitter": null,
+          "github": null,
+          "role": "Museóloga",
+          "avatar": "clara-de-oliveira.jpeg"
+        },
+        {
+          "name": "Juliana Vianna Gatts",
+          "twitter": null,
+          "github": null,
+          "instagram": "gatts.design",
+          "role": "Design de Interiores",
+          "avatar": "juliana-vianna-gatts.jpeg"
+        },
+        {
+          "name": "Gustavo William",
+          "twitter": null,
+          "github": null,
+          "role": "Design de Interiores",
+          "avatar": "gustavo-william.jpeg"
+        }
+      ]
     }
   ],
   "partners": [

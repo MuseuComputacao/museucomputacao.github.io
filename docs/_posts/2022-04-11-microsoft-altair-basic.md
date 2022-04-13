@@ -30,6 +30,7 @@ Coube à Paul Allen a tarefa de demonstrar à MITS o sistema. A caminho do aerop
 
 Nascia aí a Micro-Soft, que viraria a gigante Microsoft que todos conhecemos.
 
+
 ![picture 1](https://scontent.fsdu25-1.fna.fbcdn.net/v/t39.30808-6/267497274_444722680658525_261573207842607407_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=ma4sgRBZg1AAX9bvv2_&_nc_ht=scontent.fsdu25-1.fna&oh=00_AT8UwtWHQO3Hb_AcbPsT9szXl5SGiEFt2wUkht7at9jhig&oe=625A7372)
 
 ![picture 2](https://scontent.fsdu25-1.fna.fbcdn.net/v/t39.30808-6/266746774_444722697325190_3143460132430017551_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=GLG4loLlNxAAX-CClLH&_nc_ht=scontent.fsdu25-1.fna&oh=00_AT9TyIgKluqb2iwAy3Xvs7b7vbTec5SWTBJ6qxQg9RTaJg&oe=6258FB71)

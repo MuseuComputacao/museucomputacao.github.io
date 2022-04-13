@@ -22,33 +22,44 @@
       </h1>
       <div class="collaborators">
         {% for collaborator in site.data.about.collaborators %}  
-           <div class="collaborators__card">
-             <img src="{{ site.url }}/assets/images/collaborators/{{ collaborator.avatar }}" alt="{{ collaborator.name }}">
-              <div class="collaborators__card--name">
-                {{ collaborator.name }}
-              </div>
-              <div class="collaborators__card--role">
-                {{ collaborator.role}}
-              </div>
-              {% if collaborator.twitter %}
-                <a href="https://twitter.com/{{ collaborator.twitter }}" target="_blank">                
-                  <i class="fab fa-twitter"></i> @{{ collaborator.twitter }}
-                </a>
-              {% endif %}
-              {% if collaborator.github %}
-                <a href="https://github.com/{{ collaborator.github }}" target="_blank">
-                  <i class="fab fa-github"></i> @{{ collaborator.github}}
-                </a>
-              {% endif %}
-              {% if collaborator.instagram %}
-                <a href="https://www.instagram.com/{{ collaborator.instagram }}" target="_blank">
-                  <i class="fab fa-instagram"></i> @{{ collaborator.instagram}}
-                </a>
-              {% endif %}
-           </div>
+          <div class="collaborators__type">
+            <div class="collaborators__type--title">
+              <h4>
+              <i class="{{ collaborator.icon }}"></i> 
+               {{ collaborator.title }} 
+              </h4>
+            </div>
+            <div class="collaborators__type--item">
+              {% for item in collaborator.itemsList %}
+                <div class="collaborators__card">
+                  <img src="{{ site.url }}/assets/images/collaborators/{{ item.avatar }}" alt="{{ item.name }}">
+                  <div class="collaborators__card--name">
+                    {{ item.name }}
+                  </div>
+                  <div class="collaborators__card--role">
+                    {{ item.role}}
+                  </div>
+                  {% if item.twitter %}
+                    <a href="https://twitter.com/{{ item.twitter }}" target="_blank">                
+                      <i class="fab fa-twitter"></i> @{{ item.twitter }}
+                    </a>
+                  {% endif %}
+                  {% if item.github %}
+                    <a href="https://github.com/{{ item.github }}" target="_blank">
+                      <i class="fab fa-github"></i> @{{ item.github}}
+                    </a>
+                  {% endif %}
+                  {% if item.instagram %}
+                    <a href="https://www.instagram.com/{{ item.instagram }}" target="_blank">
+                      <i class="fab fa-instagram"></i> @{{ item.instagram}}
+                    </a>
+                  {% endif %}
+                </div>
+              {% endfor %}
+            </div>
+          </div>
         {% endfor %}
       </div>
-      
     </div>
 
     <div id="partners">
