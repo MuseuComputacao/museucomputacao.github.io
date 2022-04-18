@@ -30,14 +30,7 @@ Coube à Paul Allen a tarefa de demonstrar à MITS o sistema. A caminho do aerop
 
 Nascia aí a Micro-Soft, que viraria a gigante Microsoft que todos conhecemos.
 
-
-![picture 1](https://scontent.fsdu25-1.fna.fbcdn.net/v/t39.30808-6/267497274_444722680658525_261573207842607407_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_ohc=ma4sgRBZg1AAX9bvv2_&_nc_ht=scontent.fsdu25-1.fna&oh=00_AT8UwtWHQO3Hb_AcbPsT9szXl5SGiEFt2wUkht7at9jhig&oe=625A7372)
-
-![picture 2](https://scontent.fsdu25-1.fna.fbcdn.net/v/t39.30808-6/266746774_444722697325190_3143460132430017551_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=730e14&_nc_ohc=GLG4loLlNxAAX-CClLH&_nc_ht=scontent.fsdu25-1.fna&oh=00_AT9TyIgKluqb2iwAy3Xvs7b7vbTec5SWTBJ6qxQg9RTaJg&oe=6258FB71)
-
-![picture 3](https://scontent.fsdu25-1.fna.fbcdn.net/v/t39.30808-6/267227964_444722663991860_5576971783103575377_n.jpg?_nc_cat=106&ccb=1-5&_nc_sid=730e14&_nc_ohc=CAJMN3LMq_MAX8UBV_7&_nc_ht=scontent.fsdu25-1.fna&oh=00_AT8C7DLnZIdNVYBFpq60c7iWzDr3XjyAo7Q-SCunK0fX_A&oe=62594F8F)
-
-![picture 4](https://scontent.fsdu25-1.fna.fbcdn.net/v/t39.30808-6/267620895_444722727325187_815420248784750353_n.jpg?_nc_cat=110&ccb=1-5&_nc_sid=730e14&_nc_ohc=9lm7H29NvpEAX9q_vS0&_nc_oc=AQnwLqMo-OcA-_XZA6-_vMvrk8_bb9QVrTjYBFBFnsNQ2f4FpbALdkZ-l3ots4w8pUE&_nc_ht=scontent.fsdu25-1.fna&oh=00_AT8bEla6J9TRYU-2eQBM3TQgrEuoohF0XmRheLSgJy0XQQ&oe=625A5A3A)
+![Altair 8800 ](https://sun9-50.userapi.com/impf/c622227/v622227847/3cbe0/-uGeI3KlCMA.jpg?size=604x403&quality=96&sign=9f1d040e191380cba98506d154917be7)
 
 
 
