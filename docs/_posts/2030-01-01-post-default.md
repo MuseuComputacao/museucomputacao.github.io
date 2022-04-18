@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Post teste
-date:   2022-04-18 10:00:00 -0300
+title:  Post Default
+date:   2030-01-01 00:00:00 -0300
 categories: curiosidades
 description: Meu primeiro post
 tags: curiosidades
@@ -10,7 +10,7 @@ author:
   contact:  ana_lucia@nce.ufrj.br
   contact_link:  ana_lucia@nce.ufrj.br
 tags-icon: far fa-robot
-
+image_url:https://www2.ufjf.br/ufjf/wp-content/uploads/sites/3/2015/12/15953650942_fdcfcfd6fe_k-1.jpg
 ---
 **Olá, cheguei!** Aprendendo a usar
 
