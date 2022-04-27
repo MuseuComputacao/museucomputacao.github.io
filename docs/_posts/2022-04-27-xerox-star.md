@@ -32,8 +32,10 @@ Contudo, o pioneirismo de muitas de suas inovações (juntamente com o Xerox Alt
 se perpetuaram através dos tempos, por meio de produtos lançados pela Apple, Microsoft e muitos outros.
 Vídeo:
 
--Visão geral da Star (1982): 
-![Xerox Star] (https://2.bp.blogspot.com/-DMLBYtzWZYU/V6NkNvquneI/AAAAAAAAMHs/5cfHwTiGzPQuRvSPIeBfOYmJ1bEPYLRVACLcB/s1600/history.jpg)
+#### Visão geral da Star (1982): 
+
+
+![Xerox Star](https://2.bp.blogspot.com/-DMLBYtzWZYU/V6NkNvquneI/AAAAAAAAMHs/5cfHwTiGzPQuRvSPIeBfOYmJ1bEPYLRVACLcB/s1600/history.jpg)
 
 
 
