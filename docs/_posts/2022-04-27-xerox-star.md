@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  Post Default
-date:   2030-01-01 00:00:00 -0300
+title:  Xerox Star
+date:   2022-04-27 00:00:00 -0300
 categories: curiosidades
 description: Xerox Star
 tags: curiosidades
