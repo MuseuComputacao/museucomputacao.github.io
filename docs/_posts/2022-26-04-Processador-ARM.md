@@ -3,14 +3,14 @@ layout: post
 title:  Processador ARM
 date:   2022-04-26 00:00:00 -0300
 categories: curiosidades
-description: Processador ARM
+description: rocessador ARM
 tags: curiosidades
 author: 
   name: Ana Lucia Rodrigues
   contact:  ana_lucia@nce.ufrj.br
   contact_link:  ana_lucia@nce.ufrj.br
 tags-icon: far fa-robot
-image_url: https://scontent.fsdu8-1.fna.fbcdn.net/v/t39.30808-6/278855720_528651525598973_3564930308851369028_n.jpg?_nc_cat=111&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeGb3X45mLUGzxSvcoHpLp4YcK7mRTX3XN9wruZFNfdc3xKVc1BOpOpr_jcMTVLDRihE5W4ThV3f4z34AXe7Gd6h&_nc_ohc=uHvb-siN98UAX-w_DkP&_nc_ht=scontent.fsdu8-1.fna&oh=00_AT_gcCT5GVe1oZcy-u4R5QH27uWuip6bJRGodY6LvNTzJA&oe=627069F5
+image_url:
 ---
 
 
