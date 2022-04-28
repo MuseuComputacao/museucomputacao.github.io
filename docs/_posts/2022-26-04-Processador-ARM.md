@@ -39,5 +39,4 @@ A Acorn seguiu comandando o desenvolvendo das novas versões da arquitetura até
 Hoje em dia a arquitetura ARM está licenciada para várias empresas, como Apple, Intel, LG, Microsoft, NEC, Nintendo, Nvidia, Sony, Samsung, entre outras, que produzem diversas variantes. Por serem potentes, baratos e de baixo consumo de energia, são ideais para dispositivos PDAs, media players, celulares, tablets, Android Boxes, sendo contudo usados até mesmo em notebooks e desktops.
 
 
-Fonte:
-www.museucapixaba.com.br
+Post original em [Museu Capixaba](<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmuseucapixaba%2Fposts%2F528886018908857&show_text=true&width=500" width="500" height="770" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>)
