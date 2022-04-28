@@ -10,7 +10,7 @@ author:
   contact:  ana_lucia@nce.ufrj.br
   contact_link:  ana_lucia@nce.ufrj.br
 tags-icon: far fa-robot
-image_url: https://scontent.fsdu8-2.fna.fbcdn.net/v/t39.30808-6/279392028_529942198803239_2985713599252547678_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeHHL7rAzIf4plbOEFTPfpedaLvDDWNUrtFou8MNY1Su0c3G-JdKF-hNfK6IvWB2zk3Kcc3NZ--Y2tUE5wJQO_sX&_nc_ohc=dmTTJ2pAq1EAX90S31G&_nc_ht=scontent.fsdu8-2.fna&oh=00_AT-fXPABVerXMR2_9v_QiTzJA3badumm-!
+image_url: h
 
 ---
 
@@ -49,4 +49,4 @@ https://bit.ly/357g0LV
 *As imagens anexas são meramente ilustrativas e foram obtidas da internet.
 
 
-[fonte](https://www.facebook.com/museucapixaba/photos/a.101808168283313/530139008783558/)
+Museu Capixaba do Computador (https://scontent.fsdu8-2.fna.fbcdn.net/v/t39.30808-6/279392028_529942198803239_2985713599252547678_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeHHL7rAzIf4plbOEFTPfpedaLvDDWNUrtFou8MNY1Su0c3G-JdKF-hNfK6IvWB2zk3Kcc3NZ--Y2tUE5wJQO_sX&_nc_ohc=dmTTJ2pAq1EAX90S31G&_nc_ht=scontent.fsdu8-2.fna&oh=00_AT-fXPABVerXMR2_9v_QiTzJA3badumm-9EVDLAE0VQdRw&oe=627082A9)
