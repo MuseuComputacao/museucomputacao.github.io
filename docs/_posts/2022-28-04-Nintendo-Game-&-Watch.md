@@ -10,7 +10,7 @@ author:
   contact:  ana_lucia@nce.ufrj.br
   contact_link:  ana_lucia@nce.ufrj.br
 tags-icon: far fa-robot
-image_url: h
+image_url: https://scontent.fsdu8-2.fna.fbcdn.net/v/t39.30808-6/279392028_529942198803239_2985713599252547678_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeG7HQgD4nJ6wQKe5e7pCoYmaLvDDWNUrtFou8MNY1Su0Tdfd5dcXZ8q0PNRz7fmcadldefNtuU0hqcKRBn18VqR&_nc_ohc=dmTTJ2pAq1EAX9k8Lz0&_nc_ht=scontent.fsdu8-2.fna&oh=00_AT9qHpDLxNWxLxVSRj7HmQaY7vTxEoQJ76K8UPmMzs6PoA&oe=627082A9
 
 ---
 
