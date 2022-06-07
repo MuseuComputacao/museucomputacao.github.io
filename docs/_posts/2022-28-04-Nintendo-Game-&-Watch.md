@@ -10,7 +10,7 @@ author:
   contact:  ana_lucia@nce.ufrj.br
   contact_link:  ana_lucia@nce.ufrj.br
 tags-icon: far fa-robot
-image_url: https://scontent.fsdu8-2.fna.fbcdn.net/v/t39.30808-6/279392028_529942198803239_2985713599252547678_n.jpg?_nc_cat=103&ccb=1-5&_nc_sid=730e14&_nc_eui2=AeG7HQgD4nJ6wQKe5e7pCoYmaLvDDWNUrtFou8MNY1Su0Tdfd5dcXZ8q0PNRz7fmcadldefNtuU0hqcKRBn18VqR&_nc_ohc=dmTTJ2pAq1EAX9k8Lz0&_nc_ht=scontent.fsdu8-2.fna&oh=00_AT9qHpDLxNWxLxVSRj7HmQaY7vTxEoQJ76K8UPmMzs6PoA&oe=627082A9
+image_url: https://pbs.twimg.com/media/EQw8-YLXsAAjbwH.jpg
 
 ---
 
@@ -42,11 +42,10 @@ Anos depois Yokoi também seria um dos responsáveis pelo desenvolvimento do pri
 Durante seu tempo de fabricação, mais de 43 milhões de unidades foram comercializadas em todo o mundo.
 
 
-Quer experimentar o G&W no seu PC? Baixe o emulador do Museu Capixaba do Computador (MCCEmu) no endereço abaixo e divirta-se!
-https://bit.ly/357g0LV
+Quer experimentar o G&W no seu PC? Baixe o emulador do [Museu Capixaba do Computador](https://www.facebook.com/museucapixaba/posts/464659295331530) e se divirta.
 
 
 *As imagens anexas são meramente ilustrativas e foram obtidas da internet.
 
 
-Museu Capixaba do Computador (<iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2Fmuseucapixaba%2Fposts%2F530139038783555&show_text=true&width=500" width="500" height="660" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>)
+[Museu Capixaba do Computador](https://www.facebook.com/museucapixaba/posts/464659295331530)
