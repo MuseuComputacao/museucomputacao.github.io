@@ -21,7 +21,7 @@ $ bundle install
 ## Uso
 
 ```bash 
-$ bundle exec jakyll serve
+$ bundle exec jekyll serve
 ```
 
 The application will become available at the URL:
