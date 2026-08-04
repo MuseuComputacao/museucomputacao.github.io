@@ -1,52 +1,34 @@
-# Site Museu da Computação UFRJ 
+# Site Museu da Computação UFRJ
 
-Esse projeto é o MVP do site do museu ele foi desenvolvido com [jekyll](https://jekyllrb.com/) e tem a intenção de ser nosso primeiro contado com a comunidade. Adicionando assim blog posts e pequenas exposições virtuais. 
+Repositório destinado ao site público do Museu da Computação da UFRJ, planejado para publicar textos, posts e pequenas exposições virtuais.
 
+## Estado deste checkout
 
-Tabela de Conteudo
-=================
+O branch `main` deste checkout contém apenas este README e a licença. Não há arquivos Jekyll, Gemfile, layouts ou páginas de conteúdo disponíveis localmente.
 
-  * [Install](#install)
-  * [Uso](#uso)
-  * [Diretrizes Git](#git-guideline)
+Antes de alterar as páginas “sobre” ou “tour virtual”:
 
-## Install
+1. confirme no GitHub qual branch contém o site publicado;
+2. valide se o conteúdo está em outro repositório ou em um histórico diferente;
+3. registre o branch e o commit usados como base;
+4. só então crie a alteração de conteúdo e valide a publicação.
 
-+ Clone the repo and cd into docs folder
+## Desenvolvimento, quando o código do site estiver disponível
 
-``` bash
-$ bundle install
+O fluxo esperado para um checkout Jekyll é:
+
+```bash
+bundle install
+bundle exec jekyll serve
 ```
 
-## Uso
+O servidor local normalmente fica disponível em `http://localhost:4000/`. Confirme a configuração do projeto antes de executar comandos de publicação.
 
-```bash 
-$ bundle exec jekyll serve
-```
+## Convenções de Git
 
-The application will become available at the URL:
+Branches e mensagens de commit devem usar inglês:
 
-```
-http://localhost:3000/
-```
+- Branches: `feat/branch-name`, `fix/branch-name`, `docs/branch-name`
+- Commits: `feat(context): message`, `fix(context): message`, `docs(context): message`, `tests(context): message`
 
-
-## Git Guideline
-Crie suas branches e commits em inglês seguindo as diretrizes a seguir: 
-
-#### Branches
-- Feature:  `feat/branch-name`
-- Hotfix: `hotfix/branch-name`
-- POC: `poc/branch-name`
-
-#### Commits prefix
-- Chore: `chore(context): message`
-- Feat: `feat(context): message`
-- Fix: `fix(context): message`
-- Refactor: `refactor(context): message`
-- Tests: `tests(context): message`
-- Docs: `docs(context): message`
-
-#### Abrindo PR's 
-
-Quando abrir um PR por favor siga nosso template. 
+Não registrar credenciais, tokens ou dados de publicação neste README.
