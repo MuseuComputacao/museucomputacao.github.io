@@ -1,4 +1,61 @@
 <head>
+  <script>
+    (function () {
+      if (window.parent === window || new URLSearchParams(window.location.search).get('embed') !== '1') {
+        return;
+      }
+
+      document.documentElement.classList.add('is-embedded');
+      var parentOrigin = null;
+
+      var reportHeight = function () {
+        if (!parentOrigin) {
+          return;
+        }
+
+        var root = document.documentElement;
+        var body = document.body;
+        var height = Math.max(
+          root.scrollHeight,
+          root.offsetHeight,
+          body ? body.scrollHeight : 0,
+          body ? body.offsetHeight : 0
+        );
+
+        window.parent.postMessage(
+          { source: 'museucomputacao-legacy', type: 'content-height', height: Math.ceil(height) },
+          parentOrigin
+        );
+      };
+
+      var scheduleHeightReport = function () {
+        window.requestAnimationFrame(reportHeight);
+      };
+
+      window.addEventListener('message', function (event) {
+        var message = event.data;
+
+        if (
+          event.source === window.parent &&
+          message &&
+          message.source === 'museucomputacao-frontend' &&
+          message.type === 'request-content-height'
+        ) {
+          parentOrigin = event.origin;
+          scheduleHeightReport();
+        }
+      });
+
+      document.addEventListener('DOMContentLoaded', function () {
+        scheduleHeightReport();
+        window.addEventListener('load', scheduleHeightReport, { once: true });
+
+        if (window.ResizeObserver && document.body) {
+          new ResizeObserver(scheduleHeightReport).observe(document.body);
+        }
+      }, { once: true });
+    })();
+  </script>
   <link rel="stylesheet" type="text/css" href="{{ site.baseusrl }}/assets/css/main.css">
   <link rel="manifest" href="{{ site.baseusrl }}/manifest.json">
   <link rel="shortcut icon" type="image/png" href="{{ site.baseusrl }}/assets/images/logo-museu-app.png"/>
